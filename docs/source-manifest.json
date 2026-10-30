@@ -1,0 +1,30 @@
+{
+  "exact32_archive_sha256": "bff4443ee3cbdf4a5e320dfa56fb8e65ca7775d857550c4112de7ddb7a9c74fa",
+  "copied_source_sha256": {
+    "adaptive_evidence/api.py": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+    "adaptive_evidence/core.py": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+    "adaptive_evidence/encoder.py": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+    "adaptive_evidence/evidence_windows.py": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+    "adaptive_evidence/focused_packing.py": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+    "adaptive_evidence/passage_packing.py": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+    "adaptive_evidence/remote_encoder.py": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+    "adaptive_evidence/retrieval_views.py": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+    "adaptive_evidence/source_links.py": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+    "adaptive_evidence/source_prior.py": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+    "adaptive_evidence/__init__.py": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+    "eviweave/experimental/corpus_index.py": "4c28780043a7f525a5eff9cdaac5912eec43c3a82b37cd105af387814236a7b2",
+    "eviweave/experimental/content_tokens.py": "8935faacf8bd71d73637f64a867f300b57a2b1313ff47b6029dfb4049db71468",
+    "eviweave/experimental/token_scorer.py": "315d7cd1217180889f63c87ea580c7fae562121d8a851671f6479616eae7ca34",
+    "eviweave/experimental/lora_adapter.py": "231a08f851ab0006c6bc3c54c47d401273989f4346242ccc4fbffa1c8607b982",
+    "preflight.py": "d4d04182cc033f8843a088ebc6115c90786b2625befc97c23354dc9893061a17"
+  },
+  "colbert": {
+    "repo": "colbert-ir/colbertv2.0",
+    "revision": "c1e84128e85ef755c096a95bdb06b47793b13acf",
+    "model_sha256": "3f58890b1dfdfec066ef12ba431fa9d56992da9e30a53489242c4156e37e9017",
+    "adapter_sha256": "13d4b3a1af6d47d697f12e3970171d07c9bbbfa993521efda3c9bebb30021d04",
+    "weights_included": false
+  },
+  "publication_scope": "Standalone local runtime, unchanged exact32 Python sources, optional experimental independent retrieval; no benchmark datasets/prompts/answers, credentials, logs, source memory DB or model weights.",
+  "experimental_score_status": "No completed candidate paired final-answer result at packaging time; never promoted."
+}

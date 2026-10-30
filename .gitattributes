@@ -1,0 +1,14 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+# Preserve frozen originals byte-for-byte, including their original line endings.
+adaptive_evidence/*.py -text
+preflight.py -text
+eviweave/experimental/corpus_index.py -text
+eviweave/experimental/content_tokens.py -text
+eviweave/experimental/token_scorer.py -text
+eviweave/experimental/lora_adapter.py -text
+tests/upstream/*.py -text

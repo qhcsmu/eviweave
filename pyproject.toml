@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eviweave-memory"
+version = "0.1.0"
+description = "Local source-faithful memory retrieval with an optional ColBERT candidate index"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "EviWeave contributors"}]
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+api = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1"]
+ml = ["torch>=2.4,<3", "transformers>=4.51,<6", "safetensors>=0.4,<1"]
+test = ["fastapi>=0.115,<1", "httpx>=0.27,<1", "uvicorn>=0.30,<1"]
+
+[project.scripts]
+eviweave = "eviweave.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["eviweave*", "adaptive_evidence*"]
