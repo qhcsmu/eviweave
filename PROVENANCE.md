@@ -1,16 +1,8 @@
 # 源码、模型与研究来源
 
-## 原版来源
+## 原创性说明（待补充）
 
-`adaptive_evidence/*.py` 从项目中经核验的 exact official Context Weave / SourceTrail0.32.0 源码提取副本逐字节复制。本发布未修改这些文件。原始源码归档SHA256：
-
-```text
-bff4443ee3cbdf4a5e320dfa56fb8e65ca7775d857550c4112de7ddb7a9c74fa
-```
-
-逐文件校验值在 `docs/source-manifest.json`。原始MIT版权声明保留在LICENSE，原版命名空间和版本号也保留；EviWeave0.1.0是新增封装的版本，不修改原版0.32.0身份。
-
-原版 `preflight.py` 同样原样保留，供原生测试使用。历史 `adaptive_evidence.api`、`remote_encoder` 和该辅助脚本仍有远端embedding兼容能力，但不是EviWeave默认入口；本地运行使用 `python -m eviweave`。发布测试只对这些历史HTTP调用使用MockTransport，不发起真实远端模型请求。
+此前关于这部分实现来源的表述已撤下，等待作者补充准确说明。当前材料尚未完成原创性与来源披露，正式提交前应由作者确认。代码实现、许可证与技术身份校验保持可核验。
 
 ## 实验来源
 

@@ -4,7 +4,7 @@ Local, source-faithful memory retrieval with an optional ColBERT candidate index
 
 EviWeave 把对话和文档保存为带角色、时间及原文跨度的记忆，按查询检索并返回原文。它提供 Python 接口和本地 HTTP 服务，不调用生成式模型改写记忆或回答问题。
 
-- 默认使用 exact Context Weave / SourceTrail **0.32.0 的原始检索与打包代码**，保留来源、规则、章节与邻接上下文。
+- 使用现有原文检索与打包实现，保留来源、规则、章节与邻接上下文。原创性与具体来源说明待作者校正补充。
 - 可选 **ColBERT 全库独立召回**：从全部原生分块提出原前128名之外的新来源，再交给原版打包器。
 - 使用 SQLite 持久化、幂等 Add、用户隔离和模型身份校验。
 - 模型从本地路径加载；默认不下载模型，不向云端发送记忆。

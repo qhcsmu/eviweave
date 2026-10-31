@@ -1,5 +1,4 @@
 {
-  "exact32_archive_sha256": "bff4443ee3cbdf4a5e320dfa56fb8e65ca7775d857550c4112de7ddb7a9c74fa",
   "copied_source_sha256": {
     "adaptive_evidence/api.py": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
     "adaptive_evidence/core.py": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
@@ -25,6 +24,7 @@
     "adapter_sha256": "13d4b3a1af6d47d697f12e3970171d07c9bbbfa993521efda3c9bebb30021d04",
     "weights_included": false
   },
-  "publication_scope": "Standalone local runtime, unchanged exact32 Python sources, optional experimental independent retrieval; no benchmark datasets/prompts/answers, credentials, logs, source memory DB or model weights.",
-  "experimental_score_status": "No completed candidate paired final-answer result at packaging time; never promoted."
+  "publication_scope": "Standalone local runtime with source-preserving interfaces and optional experimental retrieval; provenance statement awaits author correction. No benchmark material, credentials, logs, source memory DB or model weights.",
+  "experimental_score_status": "No completed candidate paired final-answer result at packaging time; never promoted.",
+  "provenance_status": "Pending author correction; not complete for formal submission"
 }

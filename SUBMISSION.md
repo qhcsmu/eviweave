@@ -11,7 +11,7 @@ feat: publish EviWeave local source-faithful memory retrieval
 ## 提交正文
 
 ```text
-Package exact official 0.32 retrieval sources without changing their bytes.
+Package the current memory retrieval implementation with source-preserving interfaces.
 Add a standalone local CLI, deterministic CPU demo and loopback HTTP API.
 Expose the independent ColBERT corpus candidate index as an opt-in experiment.
 Preserve original source spans, native packing and returned-rule fallback.
@@ -43,10 +43,14 @@ python tools/release_audit.py
 - 不包含云端评测提交器、账户配置、官方路由、自动晋升或定时提交任务。
 - 不提交Smoke/Full。发布GitHub仓库不改变incumbent或永久回归门槛。
 - 公共套件历史已有暴露，原研究本地模型与官方不同；检索覆盖上界不能当成答案提升。
-- 历史0.50版本不是本次基线；新功能不会整版替换exact0.32。
+- 历史版本与当前发布不能直接等同，历史单项分数不构成当前版本的收益证明。
 
 ## 发布到远端
 
 目标GitHub账号需要先在浏览器登录。仓库URL必须以登录后的实际用户名为准，不从邮箱推测。首次创建空仓库`eviweave`后，将本地`main`提交推送到该仓库，并在GitHub页面核对README、源码及提交ID。不要把账号密码、PAT或浏览器Cookie放入远端URL、Git配置、提交或命令记录。
 
 本文是GitHub源码提交说明，不是官方竞赛提交授权。
+
+## 原创性信息待补充
+
+相关来源表述正在由作者校正，本次先留空并等待补充；不能据此勾选平台“Original work is disclosed”。正式 Full 的版本、来源、模型与部署说明须在作者补充并最终确认后提交。
