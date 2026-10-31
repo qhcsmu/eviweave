@@ -28,6 +28,8 @@
 
 运维检查：`systemctl status memory-lab@m02.service`；既定重启命令为`systemctl restart memory-lab@m02.service`，评测在途时不要主动重启。配置中的鉴权、embedding凭据及RPC凭据均不公开。
 
+已完成的容量结果、平台最低并发和持续运行条件见[CAPACITY.md](CAPACITY.md)。优化及进一步容量测试均已按用户要求停止。
+
 ## 重建限制
 
 本目录提供完整执行源码与哈希映射，不把私有运行目录伪装成一个无需外部工件即可启动的Python安装包。原始启动检查还要求匹配的模型/tokenizer、适配器、来源资格凭证与训练完整性元数据；这些路径和哈希保留在原代码和manifest中。模型权重、用户数据库、评测数据/题目/答案/提示以及凭据不随Git仓库分发。
