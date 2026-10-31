@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-31T14:32:03.170117+00:00",
+  "system": "EviWeave",
+  "registered_version": "v0.3",
+  "candidate_id": "eviweave-v03-search-credit-v34-cpu-reference-v36",
+  "deployed_manifest_sha256": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+  "scope": "Exact code snapshot and path mapping for the existing deployed v36 runtime, not a new candidate or automatic promotion.",
+  "files": {
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/audit_source.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/audit_source.py",
+      "sha256": "7456b509c0cad77336841901b7c815eb47d5aa3cccc3929a51f792193ea9b69e",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/build_manifest.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/build_manifest.py",
+      "sha256": "be095bf42aa12a28f155a1ba124352be8d765162e7233b4791d50b653b362349",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/deploy.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/deploy.py",
+      "sha256": "ab5ac91a947cbfad90d0471638dcf5eed2c4fd6abda6af0d6e7af02089cf3f9a",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/direct_scorer.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/direct_scorer.py",
+      "sha256": "e294aa760d39f95cb93d49f52120219f9ab6a7227a8987166ff6f965e948af17",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/rpc_server.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/rpc_server.py",
+      "sha256": "2c457af83b6d03cbd6148c081e7a055e26fce857d9416d11c56949f979fb5d24",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/runtime_store.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/runtime_store.py",
+      "sha256": "ddf093aa7f90c2a585455553c9da04511b95830a3b5c50514e093821acdd7f97",
+      "byte_exact": true,
+      "deployment_location": "cloud API"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/server.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/server.py",
+      "sha256": "c505548adfc90de569e154e54eb42a5b6c2d8626073e61544a5b157ae43c1bad",
+      "byte_exact": true,
+      "deployment_location": "cloud API"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/service_owner.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/service_owner.py",
+      "sha256": "e71fc9ad5f8cea7fa63791b9e56ce78a92b7f2fa410eccccb562cd9d816328f7",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/transform.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/transform.py",
+      "sha256": "7b20d884e8dab69039dd8e675b39fc6fdf01460c4e62220ba960d9441cfd89aa",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/validate_source.py": {
+      "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/validate_source.py",
+      "sha256": "085daa6edc1063f1dc1f14fa8788f61db771993b257e9fa5cd6de2cb21d85f06",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v34-search-credit/search_credit.py": {
+      "repository_path": "candidate-v03/source/metric-space-v34-search-credit/search_credit.py",
+      "sha256": "ac678bc6ff6e55507ab51cb4477acbe9104bc7763f86c3dda01adfd0a6c1fe69",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v33-timestamp-credit/temporal_headers.py": {
+      "repository_path": "candidate-v03/source/metric-space-v33-timestamp-credit/temporal_headers.py",
+      "sha256": "b7b288ab588ee5400fcbcf262cc577ac6dc924483840c2b64ebad9073a1d85cf",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/metric_model.py": {
+      "repository_path": "candidate-v03/source/metric-space-v29/metric_model.py",
+      "sha256": "d277ca2d5d93f776789d7ebfd564d26b3fb1f95bd6d7912ce7ceb3438995e5e8",
+      "byte_exact": true,
+      "deployment_location": "local CPU token service / deployment verification"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/api.py": {
+      "repository_path": "adaptive_evidence/api.py",
+      "sha256": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/api.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/core.py": {
+      "repository_path": "adaptive_evidence/core.py",
+      "sha256": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/core.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/encoder.py": {
+      "repository_path": "adaptive_evidence/encoder.py",
+      "sha256": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/encoder.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/evidence_windows.py": {
+      "repository_path": "adaptive_evidence/evidence_windows.py",
+      "sha256": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/evidence_windows.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/focused_packing.py": {
+      "repository_path": "adaptive_evidence/focused_packing.py",
+      "sha256": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/focused_packing.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/passage_packing.py": {
+      "repository_path": "adaptive_evidence/passage_packing.py",
+      "sha256": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/passage_packing.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/remote_encoder.py": {
+      "repository_path": "adaptive_evidence/remote_encoder.py",
+      "sha256": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/remote_encoder.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/retrieval_views.py": {
+      "repository_path": "adaptive_evidence/retrieval_views.py",
+      "sha256": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/retrieval_views.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/source_links.py": {
+      "repository_path": "adaptive_evidence/source_links.py",
+      "sha256": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/source_links.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/source_prior.py": {
+      "repository_path": "adaptive_evidence/source_prior.py",
+      "sha256": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/source_prior.py"
+    },
+    "repos/context-weave/best32-baseline/adaptive_evidence/__init__.py": {
+      "repository_path": "adaptive_evidence/__init__.py",
+      "sha256": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+      "byte_exact": true,
+      "deployment_location": "cloud API source/adaptive_evidence/__init__.py"
+    }
+  },
+  "runtime_source_files": 24,
+  "remote_release": "/opt/memory-lab/releases/eviweave-v03-v36cpu-c2ccd8d8bb9e",
+  "source_originality_disclosure": "Pending author correction; file identity does not establish authorship.",
+  "benchmark_records_included": false,
+  "credentials_included": false,
+  "model_weights_included": false,
+  "deployment_changed": false,
+  "model_or_scoring_changed": false,
+  "exact_original_worktree_startup_requires_external_artifacts": true,
+  "external_artifacts": "Matching model/tokenizer weights, current adapter, source qualification receipts and frozen training integrity metadata are referenced by the original startup assertions; no benchmark evaluation material or credentials is distributed."
+}

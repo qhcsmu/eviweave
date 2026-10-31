@@ -12,3 +12,7 @@ eviweave/experimental/content_tokens.py -text
 eviweave/experimental/token_scorer.py -text
 eviweave/experimental/lora_adapter.py -text
 tests/upstream/*.py -text
+
+# Preserve exact deployed-source bytes and the frozen deployment manifest.
+candidate-v03/source/** -text
+candidate-v03/DEPLOYED_MANIFEST.json -text
