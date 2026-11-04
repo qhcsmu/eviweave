@@ -24,3 +24,8 @@ candidate-v03/runtime-linux/*.service -text
 candidate-v03/runtime-linux/source/remote_encoder.py whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 candidate-v03/runtime-linux/requirements.freeze.txt text eol=lf
 .gitattributes text eol=lf
+candidate-v03/artifacts/** -text
+candidate-v03/training/RECIPE.json -text whitespace=cr-at-eol
+candidate-v03/training/ISOLATION_AUDIT.json -text whitespace=cr-at-eol
+candidate-v03/training/TRAINING_RESULT.json -text whitespace=cr-at-eol
+candidate-v03/licenses/** -text whitespace=cr-at-eol

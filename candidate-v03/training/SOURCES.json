@@ -1,0 +1,36 @@
+{
+  "dataset-card": {
+    "url": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v2/raw/ed956dea41521fc4499acbc63f966e0fd3c053ba/README.md",
+    "bytes": 16613,
+    "sha256": "18b068b91e3bfc5615806ebf5c74b143b79cbce22d41e7e26df50bbf5cc7b98a"
+  },
+  "base-card": {
+    "url": "https://huggingface.co/colbert-ir/colbertv2.0/raw/c1e84128e85ef755c096a95bdb06b47793b13acf/README.md",
+    "bytes": 10407,
+    "sha256": "44e68292037d4fac7db91b9b24ae36535ae5807eef2b323adcc83a615b91751d"
+  },
+  "dataset_license": "CC-BY-4.0",
+  "base_license": "MIT",
+  "tokenizer_license": "Apache-2.0",
+  "dataset_revision": "ed956dea41521fc4499acbc63f966e0fd3c053ba",
+  "dataset_attribution": "Bowen Jiang et al., PersonaMem-v2: Towards Personalized Intelligence via Learning Implicit User Personas and Agentic Memory, arXiv:2512.06688",
+  "tokenizer_upstream_revision": "not recorded in frozen deployment; exact deployed tokenizer files supplied with SHA256 in public startup bundle; no latest-revision substitution",
+  "model_admission_status": "not independently evidenced in available materials; AML confirmation required",
+  "license_sources": {
+    "COLBERT-MIT.txt": {
+      "url": "https://raw.githubusercontent.com/stanford-futuredata/ColBERT/cc4f3dc91c0b45d2d08c251d9d95178285c65f1c/LICENSE",
+      "bytes": 1091,
+      "sha256": "641c1a7fc3e22f3ea8521617c690213f0d741bf95ff35eeba99b34ff2102e0ae"
+    },
+    "QWEN-APACHE-2.0.txt": {
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B/raw/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/LICENSE",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    },
+    "CC-BY-4.0.txt": {
+      "url": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    }
+  }
+}

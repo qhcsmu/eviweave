@@ -1,0 +1,72 @@
+{
+  "status": "completed_CPU_training_source_isolation_readiness_audit",
+  "utc": "2026-10-30T23:56:51.976845+00:00",
+  "plan_sha256": "51a36252f4d8a91579e8904c9d91c4bf8e9857315b36ac9fca957478f2e35bf1",
+  "source_bank_reconstructed_exactly": true,
+  "archived_chunks": 10379,
+  "raw_history_messages": 7320,
+  "protected_persona_id_overlap": 0,
+  "evaluation_sources": {
+    "protected_cases": 576,
+    "unique_source_files": 576,
+    "source_records_in_all_case_scopes": 169185,
+    "physical_document_records_read": 169185,
+    "canonical_full_variants": 88272,
+    "canonical_span_variants": 149161
+  },
+  "cross_split_shared_canonical_chunk_hashes": 1,
+  "cross_split_shared_canonical_parent_hashes": 1,
+  "cross_split_shared_canonical_query_hashes": 0,
+  "summary": {
+    "train": {
+      "personas": 24,
+      "original_chunks": 7720,
+      "retained_chunks": 7686,
+      "document_exclusion_reasons": {
+        "evaluation_full_or_fixed_span": 33,
+        "evaluation_parent_message": 33,
+        "train_val_chunk_reuse": 1,
+        "train_val_parent_message_reuse": 1
+      },
+      "original_queries": 479,
+      "retained_queries": 477,
+      "query_statuses": {
+        "retained": 477,
+        "query_identity_excluded": 2
+      },
+      "query_exclusion_reasons": {
+        "evaluation_question_or_Search_query": 2
+      }
+    },
+    "val": {
+      "personas": 8,
+      "original_chunks": 2659,
+      "retained_chunks": 2645,
+      "document_exclusion_reasons": {
+        "evaluation_full_or_fixed_span": 13,
+        "evaluation_parent_message": 13,
+        "train_val_chunk_reuse": 1,
+        "train_val_parent_message_reuse": 1
+      },
+      "original_queries": 64,
+      "retained_queries": 64,
+      "query_statuses": {
+        "retained": 64
+      },
+      "query_exclusion_reasons": {}
+    }
+  },
+  "source_ledgers_sha256": {
+    "DOCUMENT_EXCLUSION_LEDGER.json": "9b9a1aebbe41c10f8edb75c7ab275a26be52bda7a442ae6bd877d2839e6b856d",
+    "QUERY_EXCLUSION_LEDGER.json": "d051d03340e321413de03c26552f8a4b471467247319bbe6b31d696eeb2a1e6c"
+  },
+  "CPU_seconds_wall": 4.875,
+  "policy_selfchecks": 4,
+  "GPU_model_calls": 0,
+  "Answer_Judge_calls": 0,
+  "new_training": false,
+  "new_candidate_selected": false,
+  "evaluation_answers_options_or_outcomes_used": false,
+  "holdout_source_and_question_hashes_for_exclusion_only": true,
+  "interpretation": "The historical corpus is reproduced and a prospective strict exclusion ledger is frozen. Hash reuse across independent personas does not by itself prove evaluation-answer leakage or invalidate historical scores; raw text was never printed. Filtered validation is a new fixed source contract, not comparable to old MRR without rerunning both models; unsupported validation questions remain unretrievable. No GPU training/evaluation, checkpoint choice, source change, active-run change or score claim. Arbitrary shifted substrings/paraphrases and upstream pretraining are outside this audit."
+}

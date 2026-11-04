@@ -1,0 +1,109 @@
+{
+  "recipe_version": 1,
+  "utc": "2026-10-31T05:33:21.650039+00:00",
+  "seed": 20261031,
+  "output_name": "run-step80",
+  "source_policy": "v9_retained_only_pristine_init",
+  "dependencies_sha256": {
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepare.py": "73ddf056ed3187cbe0ea43e686f5f644a9317a5793f8158f31d1f1fc8b4a6d1d",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/metric_model.py": "d277ca2d5d93f776789d7ebfd564d26b3fb1f95bd6d7912ce7ceb3438995e5e8",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/metrics.py": "a4107d207883472fb4a16b394e87643209ec808b22eced204b56e17f5cff612a",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/preflight.py": "d6934f6cf1ef237796ca7942fc3b73c60cf9da70171f9cd52764b8ef8190f47c",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/freeze.py": "261b92b73e2ebd574026e4bf89f0432fa52171fface61723c7c4578d0d9289f2",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/run.py": "0ccbc1349ebb0cf4e2c0593e8a29a1e05e5f047feefbe8636b88a5098210ed6b",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/wait_and_run.py": "ef93a6c1bc054099f2385a0cfe2d520a3d67b56531d65acbf2a31b53f31d5438",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/SOURCE_FREEZE.json": "121377d1750348b654ee6d903f754ad5936d0eb22d9c14553346d08a63beacd9",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/DATA.json": "12a72026ab548be1eb6a65d2c24bb0ea2b5b4e2bb0a99be639fe63fd776adb50",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/SCHEDULE.json": "e7123266f9086178232d62436354eb79a853fd6d23badc8304d2b37dc66a536b",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/RESULT.json": "b7357ab25a54f428853258ccb49998b501e20daa891a3dbbe049842d11d3c616",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/completion.json": "07a3f5f0a9f4bb2d261bc47cf3688efbb48e43861b1a35cc05747f4b6f01605f",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/preflight/RESULT.json": "8919cc1890f5e5ccc1cd64c6c6d615741a20fcb1bc594e45b4b25e2a40db4ca2",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/model_lock.py": "eaaff9ddbe57492a78200a4c5b5c02281b7fad33791e507665e5a563fdb330d7",
+    "competition/research/parallel-seven-20261030/03-token-retrieval/METRIC_SPACE_V29_DESIGN_NOTE.md": "4d090b6df3ca36e1ba2f670cfc434284ae0a46f2de67adfc82281e2441edb9c7"
+  },
+  "source": {
+    "train_queries": 477,
+    "validation_queries": 64,
+    "train_chunks": 7686,
+    "validation_chunks": 2645,
+    "train_personas": 24,
+    "validation_personas": 8,
+    "exclusion_policy": "Existing v9 ledgers; raw source case/bank JSON parsed before filtering. No evaluation answers/options or holdout examples for training.",
+    "source_limit": "Exact/canonical exclusion cannot prove paraphrase or upstream pretraining independence."
+  },
+  "representation": {
+    "document_format": "raw_body",
+    "query_positions": 32,
+    "document_window": 177,
+    "document_stride": 145,
+    "backbone_adapter_projection_vectors": "float32",
+    "dot_product": "float32",
+    "maxsim_sum": "float64",
+    "attention": "eager",
+    "encoder_mode": "eval_no_dropout_with_training_gradients",
+    "query_batch": 4,
+    "document_window_batch": 8,
+    "fixed_padding_with_discarded_dummy_rows": true,
+    "document_cache": "none; no historical cache reused",
+    "adapter_deployment": "unmerged"
+  },
+  "trainable": {
+    "layers": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "targets": [
+      "query",
+      "value"
+    ],
+    "rank": 8,
+    "alpha": 16,
+    "projection": true,
+    "parameters": 196608
+  },
+  "steps": 80,
+  "microbatches_per_step": 2,
+  "queries_per_microbatch": 4,
+  "validation_steps": [
+    80
+  ],
+  "optimizer": {
+    "name": "AdamW",
+    "lora_lr": 0.0001,
+    "projection_lr": 2e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "learning_rate_schedule": "constant",
+    "foreach": false,
+    "fused": false
+  },
+  "objective": "Historical uniform multi-positive log-softmax across the eight scheduled documents; raw-body SHA-equivalent positives; differentiable FP64 score sum.",
+  "negatives": "First8 fixed native BM25 retained same-persona nonpositive chunks excluding positive raw-body hashes. No model mining.",
+  "validation_gate": {
+    "MRR_gain_at_least": 0.01,
+    "nondecreasing": [
+      "chunk_recall10",
+      "chunk_parent_recall10",
+      "chunk_all_parents_hit",
+      "source_recall10",
+      "source_all_parents_hit"
+    ]
+  },
+  "selection": "Only final step80; gate failure rejects; no epoch/LR/loss/step sweep. Pass only authorizes a separately frozen final-answer protocol.",
+  "prior_basis": "v11 adapter/body/all32 improved MRR and recall. v24/v27 shared-query-weight failures motivate changing token metric parameterization. Historical weights are never loaded.",
+  "runtime": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1"
+  },
+  "resources": "All CUDA operations in one child of public atomic-lock owner; no service or port required; only owner releases. Continue CPU while waiting.",
+  "prohibited": "No benchmark/holdout training, official Smoke/Full, promotion, graph forest, global user facts, multiturn planning or benchmark settings changes."
+}

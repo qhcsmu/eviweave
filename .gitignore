@@ -14,6 +14,7 @@ local-model.lock/
 *.db
 *.log
 *.safetensors
+!candidate-v03/artifacts/adapter-step80.safetensors
 *.gguf
 *.bin
 build/

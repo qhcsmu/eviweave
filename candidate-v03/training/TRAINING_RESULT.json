@@ -1,0 +1,143 @@
+{
+  "status": "complete_fixed_step80_source_experiment",
+  "utc": "2026-10-31T05:58:59.282831+00:00",
+  "selected_for_separate_final_answer_protocol": true,
+  "source_gate": {
+    "passed": true,
+    "conditions": {
+      "chunk_MRR_gain_at_least_0.01": true,
+      "chunk_recall10_nondecreasing": true,
+      "chunk_parent_recall10_nondecreasing": true,
+      "chunk_all_parents_hit_nondecreasing": true,
+      "source_recall10_nondecreasing": true,
+      "source_all_parents_hit_nondecreasing": true
+    }
+  },
+  "baseline": {
+    "chunk_MRR": 0.3162182015254317,
+    "chunk_recall10": 0.2872395833333333,
+    "chunk_parent_recall10": 0.2942708333333333,
+    "chunk_all_parents_hit": 0.109375,
+    "source_MRR": 0.32098825161825173,
+    "source_recall10": 0.3138020833333333,
+    "source_all_parents_hit": 0.125
+  },
+  "learned": {
+    "chunk_MRR": 0.3518905594581323,
+    "chunk_recall10": 0.3098958333333333,
+    "chunk_parent_recall10": 0.3216145833333333,
+    "chunk_all_parents_hit": 0.109375,
+    "source_MRR": 0.3560636477516106,
+    "source_recall10": 0.3255208333333333,
+    "source_all_parents_hit": 0.125
+  },
+  "paired": {
+    "chunk_MRR": {
+      "down": 6,
+      "up": 38,
+      "equal": 20
+    },
+    "chunk_recall10": {
+      "equal": 48,
+      "down": 8,
+      "up": 8
+    },
+    "chunk_parent_recall10": {
+      "equal": 48,
+      "down": 8,
+      "up": 8
+    },
+    "chunk_all_parents_hit": {
+      "equal": 58,
+      "down": 3,
+      "up": 3
+    },
+    "source_MRR": {
+      "down": 6,
+      "up": 39,
+      "equal": 19
+    },
+    "source_recall10": {
+      "equal": 50,
+      "down": 8,
+      "up": 6
+    },
+    "source_all_parents_hit": {
+      "equal": 60,
+      "down": 2,
+      "up": 2
+    }
+  },
+  "model_identity": {
+    "base_sha256": "3f58890b1dfdfec066ef12ba431fa9d56992da9e30a53489242c4156e37e9017",
+    "adapter_sha256": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+    "features": "raw-body-all32-fp32-unmerged-v29",
+    "unmerged": true,
+    "recipe_sha256": "8dcd11744b0620a75cd40ca03446e08e13f7a0b92b34389c2fc951575fa9365a",
+    "prepared_sha256": "b7357ab25a54f428853258ccb49998b501e20daa891a3dbbe049842d11d3c616"
+  },
+  "steps": 80,
+  "microbatches": 160,
+  "trainable_parameters": 196608,
+  "save_reload_exact_probe": true,
+  "costs": {
+    "total_wall_seconds": 55.29700000002049,
+    "load_seconds": 2.5160000000614673,
+    "reload_seconds": 1.125,
+    "training_seconds": 17.54700000002049,
+    "baseline_validation_seconds": 16.155999999959022,
+    "learned_validation_seconds": 15.327999999979511,
+    "training_usage": {
+      "document_forward_batches": 290,
+      "document_padded_sequences": 795,
+      "document_encodings": 1280,
+      "document_windows": 1525,
+      "query_forward_batches": 160,
+      "query_padded_sequences": 0,
+      "query_encodings": 640
+    },
+    "baseline_usage": {
+      "document_forward_batches": 418,
+      "document_padded_sequences": 11,
+      "document_encodings": 2645,
+      "document_windows": 3333,
+      "query_forward_batches": 16,
+      "query_padded_sequences": 0,
+      "query_encodings": 64
+    },
+    "learned_usage": {
+      "query_forward_batches": 16,
+      "query_padded_sequences": 0,
+      "query_encodings": 64,
+      "document_forward_batches": 418,
+      "document_padded_sequences": 11,
+      "document_encodings": 2645,
+      "document_windows": 3333
+    },
+    "first_instance_usage": {
+      "document_forward_batches": 709,
+      "document_padded_sequences": 813,
+      "document_encodings": 3926,
+      "document_windows": 4859,
+      "query_forward_batches": 177,
+      "query_padded_sequences": 3,
+      "query_encodings": 705
+    },
+    "second_instance_usage": {
+      "query_forward_batches": 17,
+      "query_padded_sequences": 3,
+      "query_encodings": 65,
+      "document_forward_batches": 419,
+      "document_padded_sequences": 18,
+      "document_encodings": 2646,
+      "document_windows": 3334
+    },
+    "cuda_peak_allocated_mib": 971.6826171875,
+    "Answer_Judge_calls": 0,
+    "monetary_cost": null
+  },
+  "benchmark_or_holdout_records_read": 0,
+  "final_answer_scores_available": false,
+  "official_submission": false,
+  "limitations": "Source retrieval only. No benchmark score, native packing, rule/multievent protection or deployment qualification. Fixed shapes reduce arithmetic drift but do not claim cross-device bitwise equivalence."
+}
