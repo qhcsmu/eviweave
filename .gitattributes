@@ -16,3 +16,11 @@ tests/upstream/*.py -text
 # Preserve exact deployed-source bytes and the frozen deployment manifest.
 candidate-v03/source/** -text
 candidate-v03/DEPLOYED_MANIFEST.json -text
+
+# Preserve archived Linux runtime and approved query-repair bytes.
+candidate-v03/runtime-linux/source/** -text
+candidate-v03/runtime-linux/*.service -text
+# The approved encoder archive contains CRLF; retain its frozen hash.
+candidate-v03/runtime-linux/source/remote_encoder.py whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+candidate-v03/runtime-linux/requirements.freeze.txt text eol=lf
+.gitattributes text eol=lf

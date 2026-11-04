@@ -1,56 +1,32 @@
-# GitHub 首次提交说明
+# EviWeave v0.3 提交后补充材料
 
-建议仓库名称：`eviweave`。系统名称：**EviWeave · 证据织忆**。发行版本：`0.1.0`，研究发布。
+更新日期：2026-11-04。系统EviWeave，赛事版本v0.3，Textual Memory；固定候选为`eviweave-v03-search-credit-v34-cpu-reference-v36`。原Full成功完成9602/9602项，聚合记录见[Full结果](candidate-v03/EVALUATION.md)。仓库承担源码及运行材料核验，参评接入使用登记的自托管API。
 
-## 提交标题
+## 本次补充
 
-```text
-feat: publish EviWeave local source-faithful memory retrieval
-```
+- 首页以正式v0.3为入口，列明接口约定、模型身份、完整Full结果及依赖。
+- 归档正式查询长度修复、Linux常驻适配、依赖版本和合成一致性结果；保留初始快照与增量哈希。
+- 更新正式运行与提交状态，保留版权和第三方许可。
+- 保留0.1.0研究演示及历史测量的适用范围。
 
-## 提交正文
+本次材料更新没有更换受测模型、算法、关键配置或数据，没有新建评测、重放成功Add或修改线上服务。
 
-```text
-Package the current memory retrieval implementation with source-preserving interfaces.
-Add a standalone local CLI, deterministic CPU demo and loopback HTTP API.
-Expose the independent ColBERT corpus candidate index as an opt-in experiment.
-Preserve original source spans, native packing and returned-rule fallback.
-Require an owner-checked shared directory lock before GPU model loading.
-Document model provenance, offline loading, run commands and research limits.
-Exclude credentials, benchmark material, user databases, logs and model weights.
-```
+## 固定提交
 
-## 发布内容
-
-默认路径为原版检索机制；演示编码器仅帮助无需权重地验证功能。本地BGE需要单独准备模型。ColBERT全库召回默认关闭，固定源代码的实验设计与独立服务封装分别记录；没有把未完成评测宣称为已验证提升。
-
-运行方法见 [RUNNING.md](RUNNING.md)。代码来源与逐文件哈希见 [PROVENANCE.md](PROVENANCE.md) 和 `docs/source-manifest.json`。原始MIT许可完整保留。
-
-## 验证命令
+仓库：<https://github.com/qhcsmu/eviweave>。初始源码提交为`3a35fa6c3c77202c271754d0909954b9c8d75c80`，历史容量材料提交为`34bac34b947b2367548c353226fe039b15b1f98e`。本次补充以实际提交SHA登记，不改写原评测绑定的历史提交。
 
 ```shell
-python -m eviweave demo
-python -m unittest discover -s tests -p "test_*.py"
-python -m unittest discover -s tests/upstream -p "test_*.py"
-python tools/release_audit.py
+git log -1 --format=%H
+python tools/verify_v03_snapshot.py
+python tools/verify_v03_supplement.py
 ```
 
-验证记录写入 `docs/VALIDATION.md`。功能测试不等于真实语义检索或最终答案准确率。代码审计核对被冻结原版与实验模块哈希，并检查待提交文件中是否出现模型、数据库、凭据文件或常见令牌。
+审核时同时使用初始24文件`candidate-v03/SOURCE_MAP.json`和增量`candidate-v03/runtime-linux/SUPPLEMENT_MANIFEST.json`。
 
-## 评测与声明边界
+## 部署与材料边界
 
-- 不包含数据集、评测题目、选项、参考答案、生成答案或Answer/Judge提示。
-- 不包含云端评测提交器、账户配置、官方路由、自动晋升或定时提交任务。
-- 不提交Smoke/Full。发布GitHub仓库不改变incumbent或永久回归门槛。
-- 公共套件历史已有暴露，原研究本地模型与官方不同；检索覆盖上界不能当成答案提升。
-- 历史版本与当前发布不能直接等同，历史单项分数不构成当前版本的收益证明。
+正式入口、依赖、模型身份、API字段、鉴权、幂等、隔离、错误处理和复现工件要求见[Linux运行指南](candidate-v03/LINUX_RUNTIME.md)。容量、延迟及成本边界见[容量记录](candidate-v03/CAPACITY.md)。密钥、模型权重、评测内容、用户数据库及日志不公开。
 
-## 发布到远端
+已登记API地址与协议写在README；可用性取决于运营方是否启动服务器。本次未启动已关闭的服务器。
 
-目标GitHub账号需要先在浏览器登录。仓库URL必须以登录后的实际用户名为准，不从邮箱推测。首次创建空仓库`eviweave`后，将本地`main`提交推送到该仓库，并在GitHub页面核对README、源码及提交ID。不要把账号密码、PAT或浏览器Cookie放入远端URL、Git配置、提交或命令记录。
-
-本文是GitHub源码提交说明，不是官方竞赛提交授权。
-
-## 原创性信息待补充
-
-相关来源表述正在由作者校正，本次先留空并等待补充；不能据此勾选平台“Original work is disclosed”。正式 Full 的版本、来源、模型与部署说明须在作者补充并最终确认后提交。
+本次核对了2026年11月4日可读取的[API Guide](https://agentmemoryleaderboard.ai/api-guide)、[Documentation](https://agentmemoryleaderboard.ai/docs)及[赛事说明](https://agentmemoryleaderboard.ai/competition/)。平台的模型、套件、统一Answer/Judge、评分及发布审核由赛事方控制；仓库补充不代替平台审核，也不自行修改评测绑定。

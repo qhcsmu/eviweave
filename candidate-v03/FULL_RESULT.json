@@ -1,0 +1,239 @@
+{
+  "system": "EviWeave",
+  "version": "v0.3",
+  "status": "succeeded",
+  "phase": "full",
+  "completed_at": "2026-11-03T16:48:22+00:00",
+  "checked_utc": "2026-11-04T13:40:14.890983+00:00",
+  "score_scale": "0 to 1 as returned by AML; display times 100",
+  "aggregate": {
+    "score": 0.5339543268200091,
+    "completed": 9602,
+    "total": 9602,
+    "capabilities": [
+      {
+        "count": 2735,
+        "id": "A",
+        "score": 0.5787632208793151
+      },
+      {
+        "count": 1944,
+        "id": "B",
+        "score": 0.46779432844271956
+      },
+      {
+        "count": 1474,
+        "id": "C",
+        "score": 0.47373063483189803
+      },
+      {
+        "count": 1173,
+        "id": "D",
+        "score": 0.6365511169720026
+      },
+      {
+        "count": 258,
+        "id": "E",
+        "score": 0.4356589147286822
+      },
+      {
+        "count": 688,
+        "id": "G",
+        "score": 0.4958303311877063
+      },
+      {
+        "count": 619,
+        "id": "H",
+        "score": 0.6396874855758136
+      },
+      {
+        "count": 3993,
+        "id": "streaming",
+        "score": 0.496826637424318
+      }
+    ],
+    "subcapabilities": [
+      {
+        "capability_id": "A",
+        "count": 1199,
+        "id": "A1",
+        "score": 0.6407571786012153
+      },
+      {
+        "capability_id": "A",
+        "count": 978,
+        "id": "A2",
+        "score": 0.6197142986857499
+      },
+      {
+        "capability_id": "A",
+        "count": 786,
+        "id": "A3",
+        "score": 0.4385384460925391
+      },
+      {
+        "capability_id": "B",
+        "count": 1021,
+        "id": "B1",
+        "score": 0.444736498439678
+      },
+      {
+        "capability_id": "B",
+        "count": 794,
+        "id": "B2",
+        "score": 0.5607020432333032
+      },
+      {
+        "capability_id": "B",
+        "count": 442,
+        "id": "B3",
+        "score": 0.3380109458163757
+      },
+      {
+        "capability_id": "B",
+        "count": 59,
+        "id": "B4",
+        "score": 0.5084745762711864
+      },
+      {
+        "capability_id": "C",
+        "count": 952,
+        "id": "C1",
+        "score": 0.49287305563936806
+      },
+      {
+        "capability_id": "C",
+        "count": 359,
+        "id": "C2",
+        "score": 0.429260062064878
+      },
+      {
+        "capability_id": "C",
+        "count": 218,
+        "id": "C3",
+        "score": 0.4218869231841877
+      },
+      {
+        "capability_id": "D",
+        "count": 686,
+        "id": "D1",
+        "score": 0.607871720116618
+      },
+      {
+        "capability_id": "D",
+        "count": 297,
+        "id": "D2",
+        "score": 0.676947733162423
+      },
+      {
+        "capability_id": "D",
+        "count": 20,
+        "id": "D3",
+        "score": 0.05
+      },
+      {
+        "capability_id": "D",
+        "count": 263,
+        "id": "D4",
+        "score": 0.840304182509506
+      },
+      {
+        "capability_id": "E",
+        "count": 158,
+        "id": "E1",
+        "score": 0.45569620253164556
+      },
+      {
+        "capability_id": "E",
+        "count": 23,
+        "id": "E2",
+        "score": 0.5217391304347826
+      },
+      {
+        "capability_id": "E",
+        "count": 113,
+        "id": "E3",
+        "score": 0.4194690265486726
+      },
+      {
+        "capability_id": "D",
+        "count": 64,
+        "id": "F1",
+        "score": 0.17454661654563422
+      },
+      {
+        "capability_id": "G",
+        "count": 313,
+        "id": "G1",
+        "score": 0.6085435303514384
+      },
+      {
+        "capability_id": "G",
+        "count": 118,
+        "id": "G2",
+        "score": 0.6021186440677971
+      },
+      {
+        "capability_id": "G",
+        "count": 40,
+        "id": "G3",
+        "score": 0.25
+      },
+      {
+        "capability_id": "G",
+        "count": 132,
+        "id": "G4",
+        "score": 0.1600108225108225
+      },
+      {
+        "capability_id": "G",
+        "count": 117,
+        "id": "G5",
+        "score": 0.5152625152625152
+      },
+      {
+        "capability_id": "H",
+        "count": 463,
+        "id": "H1",
+        "score": 0.7093847192224622
+      },
+      {
+        "capability_id": "H",
+        "count": 156,
+        "id": "H2",
+        "score": 0.43282967032967035
+      },
+      {
+        "capability_id": "streaming",
+        "count": 3590,
+        "id": "streaming.online",
+        "score": 0.42494472848493486
+      },
+      {
+        "capability_id": "streaming",
+        "count": 403,
+        "id": "streaming.intra_transfer",
+        "score": 1.0
+      }
+    ]
+  },
+  "branch_completion": {
+    "streaming": {
+      "status": "succeeded",
+      "stage": "eval",
+      "done": 3993,
+      "total": 3993,
+      "percent": 100.0
+    },
+    "textual": {
+      "status": "succeeded",
+      "stage": "eval",
+      "done": 5609,
+      "total": 5609,
+      "current": 5892,
+      "percent": 100.0
+    }
+  },
+  "official_case_content_included": false,
+  "public_leaderboard_review_status": "not established by this task metadata GET"
+}

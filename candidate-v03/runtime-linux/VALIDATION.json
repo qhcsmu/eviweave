@@ -1,0 +1,139 @@
+{
+  "scope": "Five fixed synthetic CPU parity inputs; not global equivalence or an answer-accuracy experiment",
+  "passed": true,
+  "maximum_absolute_score_delta": 6.0051679611206055e-06,
+  "existing_gate": {
+    "existing_gate_not_relaxed": true,
+    "maximum_absolute_score_delta": 1e-05,
+    "finite_vectors_and_scores": true,
+    "same_query_and_document_token_ids": true,
+    "same_source_selection_and_tie_order": true,
+    "byte_equal_returned_evidence": true
+  },
+  "inputs": [
+    {
+      "id": "schedule-change",
+      "passed": true,
+      "checks": {
+        "query_ids": true,
+        "document_ids": true,
+        "document_rank_order": true,
+        "admitted_sources": true,
+        "candidate_order": true,
+        "selection": true,
+        "response_sha256": true,
+        "response": true,
+        "fixture_sha256": true,
+        "proposal_detail": true,
+        "matching_score_vector_lengths": true,
+        "finite_scores": true,
+        "score_within_existing_gate": true
+      }
+    },
+    {
+      "id": "negation-rule",
+      "passed": true,
+      "checks": {
+        "query_ids": true,
+        "document_ids": true,
+        "document_rank_order": true,
+        "admitted_sources": true,
+        "candidate_order": true,
+        "selection": true,
+        "response_sha256": true,
+        "response": true,
+        "fixture_sha256": true,
+        "proposal_detail": true,
+        "matching_score_vector_lengths": true,
+        "finite_scores": true,
+        "score_within_existing_gate": true
+      }
+    },
+    {
+      "id": "multi-event",
+      "passed": true,
+      "checks": {
+        "query_ids": true,
+        "document_ids": true,
+        "document_rank_order": true,
+        "admitted_sources": true,
+        "candidate_order": true,
+        "selection": true,
+        "response_sha256": true,
+        "response": true,
+        "fixture_sha256": true,
+        "proposal_detail": true,
+        "matching_score_vector_lengths": true,
+        "finite_scores": true,
+        "score_within_existing_gate": true
+      }
+    },
+    {
+      "id": "windowed-document",
+      "passed": true,
+      "checks": {
+        "query_ids": true,
+        "document_ids": true,
+        "document_rank_order": true,
+        "admitted_sources": true,
+        "candidate_order": true,
+        "selection": true,
+        "response_sha256": true,
+        "response": true,
+        "fixture_sha256": true,
+        "proposal_detail": true,
+        "matching_score_vector_lengths": true,
+        "finite_scores": true,
+        "score_within_existing_gate": true
+      }
+    },
+    {
+      "id": "same-score-tie",
+      "passed": true,
+      "checks": {
+        "query_ids": true,
+        "document_ids": true,
+        "document_rank_order": true,
+        "admitted_sources": true,
+        "candidate_order": true,
+        "selection": true,
+        "response_sha256": true,
+        "response": true,
+        "fixture_sha256": true,
+        "proposal_detail": true,
+        "matching_score_vector_lengths": true,
+        "finite_scores": true,
+        "score_within_existing_gate": true
+      }
+    }
+  ],
+  "owner_checks": {
+    "passed": true,
+    "tests": {
+      "live_owner_accepted": true,
+      "reused_pid_start_tick_rejected": true,
+      "other_boot_rejected": true,
+      "other_pid_rejected": true,
+      "other_platform_rejected": true,
+      "dead_owner_rejected": true,
+      "atomic_duplicate_owner_rejected": true
+    },
+    "model_calls": 0,
+    "production_writes": 0,
+    "public_GPU_lock_touched": false
+  },
+  "post_cutover_fixed_RPC_seconds": [
+    1.6836638130189385,
+    1.5534562520042527,
+    1.6653791059798095,
+    1.5642563860164955,
+    1.6726819629839156
+  ],
+  "post_cutover_fixed_RPC_median_seconds": 1.6653791059798095,
+  "provenance_hashes": {
+    "parity_result": "d3ad99b5b57f7c98bdf0b7e07d6356c4c65964d1a22bf44a4bf291732c9353fb",
+    "fixed_protocol": "4a7da516e6c59e8d2f41e25f14fbf342da9f151ff6a47296e6d4649bb8c393a2",
+    "Linux_build_materials": "16999e898d242d426df4289e065ecc45230817a24c5baf956721203d3031d325"
+  },
+  "production_fault_injection_performed": false
+}

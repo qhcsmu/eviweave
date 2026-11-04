@@ -1,0 +1,148 @@
+{
+  "system": "EviWeave",
+  "version": "v0.3",
+  "candidate_id": "eviweave-v03-search-credit-v34-cpu-reference-v36",
+  "created_utc": "2026-11-04T13:52:47.281620+00:00",
+  "initial_manifest_sha256": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+  "scope": "Publication supplement only; no production implementation changes",
+  "API_overlay": {
+    "target": "adaptive_evidence/remote_encoder.py",
+    "initial_sha256": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+    "deployed_sha256": "5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3",
+    "query_only": true,
+    "fixed_repair_commit": "3776820225b2e6f36d445b45fad799427ea76acf",
+    "receipt_sha256": "6334a144d700bba018aa84d979ce9e837265bfbd86def4fab18081dad5a2317f",
+    "server_archive_sha256": "b713053de8b22fe215ee61f27b1feffc2bd764dcc0b08dfad874a78eb23d6dda",
+    "same_source_in_independent_migration_preservation_record": true
+  },
+  "frozen_initial_source_map_preserved": true,
+  "original_workspace_layout_required": true,
+  "required_external_artifacts": [
+    "ColBERT base checkpoint and tokenizer",
+    "formal v29 adapter",
+    "Qwen budget tokenizer",
+    "SOURCE128 qualification and training integrity metadata",
+    "private API/embedding/RPC configuration and activation state"
+  ],
+  "model_weights_or_private_evaluation_data_distributed": false,
+  "server_shutdown_reported_by_operator": true,
+  "live_server_recheck_performed": false,
+  "files": [
+    {
+      "repository_path": "candidate-v03/runtime-linux/source/remote_encoder.py",
+      "sha256": "5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3",
+      "bytes": 12717,
+      "purpose": "Approved API overlay: adaptive_evidence/remote_encoder.py; query-only length recovery"
+    },
+    {
+      "repository_path": "candidate-v03/runtime-linux/source/linux_owner_resident.py",
+      "sha256": "5ca16a348e2a4d70d975ff7d57f77493f6af1fddae4c3db35b00a06c000caeef",
+      "bytes": 1905,
+      "purpose": "Exact Linux resident runtime source archive; original workspace layout required"
+    },
+    {
+      "repository_path": "candidate-v03/runtime-linux/source/rpc_server_resident.py",
+      "sha256": "e6be1bbe105b6998e0b1e9e493e5c93ce5e5c024ad4475133b4c687f5f6016dd",
+      "bytes": 8157,
+      "purpose": "Exact Linux resident runtime source archive; original workspace layout required"
+    },
+    {
+      "repository_path": "candidate-v03/runtime-linux/source/process_check_resident.py",
+      "sha256": "e66d9ec06706517147b7ec1f8baab8b47e291636380971492ad477262c270d2f",
+      "bytes": 2557,
+      "purpose": "Synthetic Linux ownership check archive"
+    },
+    {
+      "repository_path": "candidate-v03/runtime-linux/eviweave-m02-token.service",
+      "sha256": "7024f1511621e4f2e5038a9cadc05733ec5031dcd2e47fc31f0e16b65344af68",
+      "bytes": 1044,
+      "purpose": "Installed systemd unit archive; paths and private artifacts must be prepared separately"
+    },
+    {
+      "repository_path": "candidate-v03/runtime-linux/requirements.freeze.txt",
+      "sha256": "6dade856b275d1cdecac881eb1382d5ef74a20818ef794c6684f8a498f59aa67",
+      "bytes": 1283,
+      "purpose": "Recorded installed dependency versions for the Linux token process"
+    },
+    {
+      "repository_path": "candidate-v03/runtime-linux/VALIDATION.json",
+      "sha256": "9143e7d667e04d3f31d3734b6388b1c3d867ce87171dba9b70ef85550773e1b5",
+      "bytes": 4114,
+      "purpose": "Sanitized synthetic verification summary; no evaluation records"
+    }
+  ],
+  "API_source_archive_verification": {
+    "source_archive_sha256": "b713053de8b22fe215ee61f27b1feffc2bd764dcc0b08dfad874a78eb23d6dda",
+    "compared_API_runtime_Python_files": 13,
+    "all_match": true,
+    "scope": "API runtime files only; packaging and tests not counted",
+    "files": [
+      {
+        "archive_path": "adaptive_evidence/__init__.py",
+        "repository_path": "adaptive_evidence/__init__.py",
+        "sha256": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf"
+      },
+      {
+        "archive_path": "adaptive_evidence/api.py",
+        "repository_path": "adaptive_evidence/api.py",
+        "sha256": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086"
+      },
+      {
+        "archive_path": "adaptive_evidence/core.py",
+        "repository_path": "adaptive_evidence/core.py",
+        "sha256": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f"
+      },
+      {
+        "archive_path": "adaptive_evidence/encoder.py",
+        "repository_path": "adaptive_evidence/encoder.py",
+        "sha256": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae"
+      },
+      {
+        "archive_path": "adaptive_evidence/evidence_windows.py",
+        "repository_path": "adaptive_evidence/evidence_windows.py",
+        "sha256": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166"
+      },
+      {
+        "archive_path": "adaptive_evidence/focused_packing.py",
+        "repository_path": "adaptive_evidence/focused_packing.py",
+        "sha256": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116"
+      },
+      {
+        "archive_path": "adaptive_evidence/passage_packing.py",
+        "repository_path": "adaptive_evidence/passage_packing.py",
+        "sha256": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03"
+      },
+      {
+        "archive_path": "adaptive_evidence/remote_encoder.py",
+        "repository_path": "candidate-v03/runtime-linux/source/remote_encoder.py",
+        "sha256": "5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3"
+      },
+      {
+        "archive_path": "adaptive_evidence/retrieval_views.py",
+        "repository_path": "adaptive_evidence/retrieval_views.py",
+        "sha256": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91"
+      },
+      {
+        "archive_path": "adaptive_evidence/source_links.py",
+        "repository_path": "adaptive_evidence/source_links.py",
+        "sha256": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0"
+      },
+      {
+        "archive_path": "adaptive_evidence/source_prior.py",
+        "repository_path": "adaptive_evidence/source_prior.py",
+        "sha256": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37"
+      },
+      {
+        "archive_path": "runtime_store.py",
+        "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/runtime_store.py",
+        "sha256": "ddf093aa7f90c2a585455553c9da04511b95830a3b5c50514e093821acdd7f97"
+      },
+      {
+        "archive_path": "server.py",
+        "repository_path": "candidate-v03/source/deployment-v36-cpu-reference/server.py",
+        "sha256": "c505548adfc90de569e154e54eb42a5b6c2d8626073e61544a5b157ae43c1bad"
+      }
+    ],
+    "server_restarted_or_contacted": false
+  }
+}

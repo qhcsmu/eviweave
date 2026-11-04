@@ -1,0 +1,27 @@
+[Unit]
+Description=EviWeave v0.3 original CPU token retrieval, Linux resident process adapter
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/memory-lab/resident-staging/eviweave-v03-c2ccd8d8bb9e-20261101/workspace
+ExecStart=/opt/memory-lab/resident-staging/eviweave-v03-c2ccd8d8bb9e-20261101/linux-build-v2/venv/bin/python -B -X utf8 /opt/memory-lab/resident-staging/eviweave-v03-c2ccd8d8bb9e-20261101/workspace/competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/linux_owner_resident.py
+Environment=CUDA_VISIBLE_DEVICES=-1
+Environment=HF_HUB_OFFLINE=1
+Environment=TRANSFORMERS_OFFLINE=1
+Environment=TOKENIZERS_PARALLELISM=false
+Environment=OMP_NUM_THREADS=2
+Environment=MKL_NUM_THREADS=2
+Environment=EVIWEAVE_OWNER_LOCK_ROOT=/run/eviweave-m02-token
+RuntimeDirectory=eviweave-m02-token
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=no
+UMask=0077
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+KillMode=control-group
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,5 +1,7 @@
 # 运行指南
 
+本页描述包版本0.1.0的本地研究演示，其Search响应为`memories`。正式参评v0.3的Linux部署、`data`响应及模型配置见[candidate-v03/LINUX_RUNTIME.md](candidate-v03/LINUX_RUNTIME.md)。在与正式服务共用的机器上，演示请显式使用其他端口，例如`--port 18503`。
+
 ## 1. 环境与安装
 
 需要 Python 3.10+。基础功能只依赖 NumPy；服务、模型、测试按需安装。

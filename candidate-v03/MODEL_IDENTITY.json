@@ -41,5 +41,5 @@
   "prepared_training_metadata_sha256": "b7357ab25a54f428853258ccb49998b501e20daa891a3dbbe049842d11d3c616",
   "adapter_bytes": 788584,
   "weights_distributed": false,
-  "note": "No research Answer/Judge is loaded by the deployed memory service. Textual platform performs final answers. Originality information remains pending author correction."
+  "note": "No research Answer/Judge is loaded by the memory service. AML performs final answers and scoring. Supplemental Linux runtime and query-recovery source identities are recorded separately."
 }

@@ -24,7 +24,6 @@
     "adapter_sha256": "13d4b3a1af6d47d697f12e3970171d07c9bbbfa993521efda3c9bebb30021d04",
     "weights_included": false
   },
-  "publication_scope": "Standalone local runtime with source-preserving interfaces and optional experimental retrieval; provenance statement awaits author correction. No benchmark material, credentials, logs, source memory DB or model weights.",
-  "experimental_score_status": "No completed candidate paired final-answer result at packaging time; never promoted.",
-  "provenance_status": "Pending author correction; not complete for formal submission"
+  "publication_scope": "Historical 0.1.0 research runtime; formal v0.3 source and runtime supplement are indexed under candidate-v03. No benchmark content, credentials, logs, databases or model weights.",
+  "experimental_score_status": "No completed candidate paired final-answer result at packaging time; never promoted."
 }

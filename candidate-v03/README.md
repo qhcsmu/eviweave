@@ -1,36 +1,36 @@
-# EviWeave v0.3 已部署候选的源码对应
+# EviWeave v0.3 正式源码与运行材料
 
-这里保存现有 v36 的逐字节源码快照和部署映射。它与仓库根目录的0.1.0研究CLI、可选全库实验是不同发布范围。加入快照没有改变受测代码、模型、接口或参数，也不是新的优化实验。
+本目录对应赛事版本v0.3，候选ID为`eviweave-v03-search-credit-v34-cpu-reference-v36`。完整Full已成功完成，结果见[EVALUATION.md](EVALUATION.md)。本次补充只更新材料及归档副本，没有部署新实现。
 
-原创性及来源说明等待作者补充。文件哈希只证明技术身份，不代表作者声明；不能据此勾选赛事的完整原创性披露。许可证、版权和历史证据保留。
+## 源码映射
 
-候选：`eviweave-v03-search-credit-v34-cpu-reference-v36`；平台系统EviWeave，版本v0.3；Textual。Manifest SHA256：`c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c`。
+初始源码发布提交为`3a35fa6c3c77202c271754d0909954b9c8d75c80`；容量材料提交为`34bac34b947b2367548c353226fe039b15b1f98e`。本次补充以实际Git提交SHA另行登记，不改写历史绑定。
 
-## 核验方法
+- [SOURCE_MAP.json](SOURCE_MAP.json)：初始24个Python文件的路径和SHA256，含根目录`adaptive_evidence/`及`source/`中的API包装、评分与打包机制。
+- [DEPLOYED_MANIFEST.json](DEPLOYED_MANIFEST.json)：冻结部署身份，SHA256为`c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c`，历史字段按原件保留。
+- [运行补充清单](runtime-linux/SUPPLEMENT_MANIFEST.json)：正式查询修复、Linux进程适配、依赖和验证记录。重建API时，将补充的`remote_encoder.py`置于API包的`adaptive_evidence/remote_encoder.py`；初始快照继续保留以便核验差异。
 
-`SOURCE_MAP.json`逐一对应原工作区路径、当前GitHub文件路径和SHA256。11个共享API模块位于仓库根目录`adaptive_evidence/`；其余源码位于本目录`source/`，内容未改。云端实际执行`server.py`和`runtime_store.py`，词元服务在本机以原FP32 CPU实现执行；不是在云端运行根目录的演示HashEncoder。
+本次从服务器修复后的本地源码归档逐一核验了13个API运行文件；结合正式编码器覆盖层后均与公开文件逐字节一致。Linux归档文件与已登记部署哈希一致。服务器已关闭，未将本地归档核验表述为本次实时线上检查。
 
-`DEPLOYED_MANIFEST.json`是部署时的原始冻结记录；其中旧资格/授权布尔值按历史原件保存，不能当作当前提交许可。`MODEL_IDENTITY.json`标识当前适配器，避免与根目录旧实验的适配器混用。
+正式API入口是`source/deployment-v36-cpu-reference/server.py`及`runtime_store.py`；词元入口是`runtime-linux/source/linux_owner_resident.py`，由其调用`rpc_server_resident.py`。这些是生产布局的归档副本，直接在本目录启动不会自动准备模型或资格元数据。
 
-## 模型与运行边界
+在仓库根目录核验：
 
-- 基础权重SHA256：`3f58890b1dfdfec066ef12ba431fa9d56992da9e30a53489242c4156e37e9017`。
-- 当前适配器SHA256：`d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619`。
-- 原FP32编码/MaxSim、FP64求和；query32/window177/stride145、unmerged LoRA、2 CPU线程。
-- 原文与元数据保留，使用固定Search credit机制；没有新训练、图森林、全历史短句或多轮规划。
-- 无生成式Add/Search LLM，平台负责Answer/Judge。原生embedding声明为text-embedding-v4；ColBERT用于来源池评分。
+```shell
+python tools/verify_v03_snapshot.py
+python tools/verify_v03_supplement.py
+```
 
-## 当前生产运行说明
+## 两项运行补充
 
-已部署的m02使用独立release、独立venv入口，端口18102，由systemd管理；依赖只读引用原环境。其他九套服务和共享源码未修改。版本更新只能在没有官方在途任务、核验完整身份后进行；Full期间保持源码、模型和参数冻结。
+**查询长度修复。** 正式源码SHA256为`5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3`，仅在供应商明确拒绝查询长度时无损分段编码和加权合并。正式版具有query-only条件，见[查询修复范围](LINUX_RUNTIME.md#查询长度恢复)。
 
-云端API依赖本机CPU词元服务和SSH反向隧道。本机必须全程保持开机、联网、禁用休眠，不能结束该服务会话；断开后系统返回503，不静默回退。容量与持续运行条件应在赛事说明中如实填写。
+**Linux常驻迁移。** 2026年11月2日完成同机18403端口交接，保持同一模型及CPU评分精度，由systemd管理生命周期。合成数值对照、进程检查和接入验证摘要见[VALIDATION.json](runtime-linux/VALIDATION.json)。原API与SQLite位置保持。
 
-运维检查：`systemctl status memory-lab@m02.service`；既定重启命令为`systemctl restart memory-lab@m02.service`，评测在途时不要主动重启。配置中的鉴权、embedding凭据及RPC凭据均不公开。
+## 复现边界
 
-已完成的容量结果、平台最低并发和持续运行条件见[CAPACITY.md](CAPACITY.md)。优化及进一步容量测试均已按用户要求停止。
+正式模型、适配器、分词器和参数见[MODEL_IDENTITY.json](MODEL_IDENTITY.json)。根目录研究CLI的旧实验适配器与本候选不同；包版本0.1.0不等同于赛事版本v0.3。
 
-## 重建限制
+完整重建需要匹配的本地权重、正式适配器、预算分词器、训练完整性与来源资格元数据，以及私有embedding/RPC配置。公开仓库不分发这些工件；已有工件的布局、运行命令、接口和依赖见[LINUX_RUNTIME.md](LINUX_RUNTIME.md)。
 
-本目录提供完整执行源码与哈希映射，不把私有运行目录伪装成一个无需外部工件即可启动的Python安装包。原始启动检查还要求匹配的模型/tokenizer、适配器、来源资格凭证与训练完整性元数据；这些路径和哈希保留在原代码和manifest中。模型权重、用户数据库、评测数据/题目/答案/提示以及凭据不随Git仓库分发。
-根目录`RUNNING.md`继续描述0.1.0研究包的本地演示；运行该演示不等于复现此v36候选。正式申请请绑定含本快照的固定Git Commit，并如实说明外部模型工件与运行条件。
+当前服务器由运营方关闭。历史容量、延迟和成本范围见[CAPACITY.md](CAPACITY.md)。固定验证不证明全域浮点等价或未知负载下的稳定性。
