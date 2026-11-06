@@ -21,3 +21,9 @@ build/
 dist/
 .check-tmp/
 publication-status.json
+
+# Development package build products
+*.egg-info/
+build/
+dist/
+__pycache__/

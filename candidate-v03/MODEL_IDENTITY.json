@@ -40,6 +40,13 @@
   "source_recipe_sha256": "8dcd11744b0620a75cd40ca03446e08e13f7a0b92b34389c2fc951575fa9365a",
   "prepared_training_metadata_sha256": "b7357ab25a54f428853258ccb49998b501e20daa891a3dbbe049842d11d3c616",
   "adapter_bytes": 788584,
-  "weights_distributed": false,
-  "note": "No research Answer/Judge is loaded by the memory service. AML performs final answers and scoring. Supplemental Linux runtime and query-recovery source identities are recorded separately."
+  "weights_distributed": true,
+  "note": "No research Answer/Judge is loaded by the memory service. AML performs final answers and scoring. Supplemental Linux runtime and query-recovery source identities are recorded separately.",
+  "base_weights_distributed": false,
+  "adapter_public_url": "https://raw.githubusercontent.com/qhcsmu/eviweave/082390824fae661659557adc74de14251522904e/candidate-v03/artifacts/adapter-step80.safetensors",
+  "artifact_access": "ARTIFACT_ACCESS.md",
+  "model_card": "MODEL_CARD.md",
+  "training_source": "bowen-upenn/PersonaMem-v2@ed956dea41521fc4499acbc63f966e0fd3c053ba",
+  "training_source_license": "CC-BY-4.0",
+  "model_source_admission": "pending_explicit_AML_confirmation"
 }

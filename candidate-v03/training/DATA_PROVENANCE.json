@@ -1,0 +1,45 @@
+{
+  "dataset": "bowen-upenn/PersonaMem-v2",
+  "revision": "ed956dea41521fc4499acbc63f966e0fd3c053ba",
+  "license": "CC-BY-4.0",
+  "native_file_sha256": {
+    "train": "62abb042f529818a22be4ced84b683364f000af68608008c20186527740276d6",
+    "val": "a47a7dd3879de5e282c6d15266437ed44cf69c0c93c79634645dbd73d655b29a"
+  },
+  "native_rows": {
+    "train": 18549,
+    "val": 2061
+  },
+  "native_persona_overlap": 735,
+  "final_partition": "Regroup union of native train and val by persona: 24 train / 8 validation; native CSV partitions are not treated as persona-disjoint",
+  "all_benchmark_personas_excluded": 200,
+  "prior_numeric_personas_excluded": 16,
+  "LoCoMo_used_for_training": false,
+  "source_bank_messages": 7320,
+  "source_bank_chunks_before_exclusion": 10379,
+  "post_exclusion": {
+    "train_queries": 477,
+    "validation_queries": 64,
+    "train_chunks": 7686,
+    "validation_chunks": 2645
+  },
+  "training_fields": [
+    "user_query.content",
+    "related_conversation_snippet relevance labels",
+    "original role/content spans from selected complete native histories"
+  ],
+  "not_used": [
+    "answer texts",
+    "choice texts or letters",
+    "evaluation outcomes",
+    "holdout training examples"
+  ],
+  "raw_source_parsed_before_exclusion": true,
+  "protected_source_question_hashes_used_for_exclusion_only": true,
+  "upstream_pretraining_independence_proven": false,
+  "native_source_urls": {
+    "train": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v2/resolve/ed956dea41521fc4499acbc63f966e0fd3c053ba/benchmark/text/train.csv",
+    "val": "https://huggingface.co/datasets/bowen-upenn/PersonaMem-v2/resolve/ed956dea41521fc4499acbc63f966e0fd3c053ba/benchmark/text/val.csv"
+  },
+  "native_csv_sha256_matches_pinned_upstream_LFS": true
+}

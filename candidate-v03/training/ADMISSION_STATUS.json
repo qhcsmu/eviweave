@@ -1,0 +1,15 @@
+{
+  "updated": "2026-11-04",
+  "model_sha256": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+  "model_training_source_admission": "pending_explicit_AML_confirmation",
+  "evidence_scope": "No separate AML confirmation for this exact adapter and training corpus is present in the available materials.",
+  "source_gate": "local source-retrieval gate passed; not competition approval",
+  "linux_migration": "User supplied AML reply permitting equivalent Linux migration of the same weights/precision/encoding/MaxSim; limited to that scope",
+  "embedding_patch": "User reported separate approval; this is not adapter-source approval",
+  "full": "teval_eaf0f230cb007fa8 completed 9602/9602; task completion is not model-source admission or leaderboard review",
+  "public_leaderboard_approval": "not independently evidenced here",
+  "required_next_action": "Operator replies to original AML thread with model card and controlled artifact delivery request; attach written response without credentials when received",
+  "new_training": 0,
+  "new_evaluations": 0,
+  "deployment_changes": 0
+}

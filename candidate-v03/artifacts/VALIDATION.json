@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-04",
+  "passed": true,
+  "tests": {
+    "public_68_files": true,
+    "all_80_files": true,
+    "missing_controlled_stops_before_write": true,
+    "wrong_controlled_hash_stops_before_write": true,
+    "existing_destination_rejected": true,
+    "unexpected_archive_members_rejected": true,
+    "verify_v03_snapshot.py": true,
+    "verify_v03_supplement.py": true
+  },
+  "public_archive_files": 67,
+  "controlled_archive_files": 11,
+  "total_startup_file_checks": 80,
+  "restoration_scope": "New local directories; full reconstruction used exact existing base weights offline; no inference or cold-start performed",
+  "base_and_native_training_CSV_hashes_match_pinned_upstream_LFS": true,
+  "model_calls": 0,
+  "training_steps": 0,
+  "services_started": 0,
+  "evaluation_requests": 0,
+  "model_source_admission_confirmed": false,
+  "production_modified": false
+}

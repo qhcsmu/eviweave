@@ -1,6 +1,6 @@
 # 运行指南
 
-本页描述包版本0.1.0的本地研究演示，其Search响应为`memories`。正式参评v0.3的Linux部署、`data`响应及模型配置见[candidate-v03/LINUX_RUNTIME.md](candidate-v03/LINUX_RUNTIME.md)。在与正式服务共用的机器上，演示请显式使用其他端口，例如`--port 18503`。
+本页描述包版本0.1.0的本地研究演示，其Search响应为`memories`。正式参评v0.3的Linux部署、`data`响应及模型配置见[candidate-v03/LINUX_RUNTIME.md](../candidate-v03/LINUX_RUNTIME.md)。在与正式服务共用的机器上，演示请显式使用其他端口，例如`--port 18503`。
 
 ## 1. 环境与安装
 
@@ -36,7 +36,7 @@ curl http://127.0.0.1:18403/health
 跨平台完整客户端：
 
 ```shell
-python examples/client.py
+python benchmarks/examples/client.py
 ```
 
 ### 写入
@@ -92,7 +92,7 @@ python -m eviweave serve --encoder bge --model-dir ./models/bge-small-en-v1.5 --
 python -m eviweave serve --encoder bge --model-dir ./models/bge-small-en-v1.5 --db ./data/experimental.sqlite3 --experimental-colbert --colbert-dir ./models/colbertv2.0 --colbert-device cpu --index-dir ./data/colbert-index
 ```
 
-固定官方模型来源：`colbert-ir/colbertv2.0`，revision `c1e84128e85ef755c096a95bdb06b47793b13acf`。模型身份和SHA256在 `docs/source-manifest.json`；加载时核验权重身份。完整分块使用重叠窗口编码，不静默丢弃尾部。
+固定官方模型来源：`colbert-ir/colbertv2.0`，revision `c1e84128e85ef755c096a95bdb06b47793b13acf`。模型身份和SHA256在 `model_notes/source-manifest.json`；加载时核验权重身份。完整分块使用重叠窗口编码，不静默丢弃尾部。
 
 上述命令使用基础权重，是一个未评分的配置，**不等于训练适配器版本**。复现原研究的step80配置时，还需在命令末尾指定：
 
@@ -116,8 +116,8 @@ python -m eviweave serve --encoder bge --model-dir ./models/bge-small-en-v1.5 --
 
 ```shell
 python -m unittest discover -s tests -p "test_*.py"
-python -m unittest discover -s tests/upstream -p "test_*.py"
-python tools/release_audit.py
+python -m unittest discover -s benchmarks/tests/upstream -p "test_*.py"
+python artifacts/tools/release_audit.py
 ```
 
 测试使用合成数据/假编码器，不运行 GPU、不提交官方评测、不需要评测答案。它们检验API、隔离、幂等、持久化、原文预算、规则回退及锁所有权，不构成语义模型准确率评估。

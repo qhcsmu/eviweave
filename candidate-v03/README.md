@@ -31,6 +31,6 @@ python tools/verify_v03_supplement.py
 
 正式模型、适配器、分词器和参数见[MODEL_IDENTITY.json](MODEL_IDENTITY.json)。根目录研究CLI的旧实验适配器与本候选不同；包版本0.1.0不等同于赛事版本v0.3。
 
-完整重建需要匹配的本地权重、正式适配器、预算分词器、训练完整性与来源资格元数据，以及私有embedding/RPC配置。公开仓库不分发这些工件；已有工件的布局、运行命令、接口和依赖见[LINUX_RUNTIME.md](LINUX_RUNTIME.md)。
+正式适配器、67个公开启动文件及固定基础模型下载已补齐，11个受控启动文件另以本地包交付；获取、下载命令和边界见[ARTIFACT_ACCESS.md](ARTIFACT_ACCESS.md)。[模型卡](MODEL_CARD.md)和[来源记录](training/DATA_PROVENANCE.json)披露配方、数据许可、排除规则、回退与单独准入待确认状态。完整复原还需受控包、隔离运行环境和私有embedding/RPC配置，不能把公开文件校验等同于完整冷启动。
 
 当前服务器由运营方关闭。历史容量、延迟和成本范围见[CAPACITY.md](CAPACITY.md)。固定验证不证明全域浮点等价或未知负载下的稳定性。

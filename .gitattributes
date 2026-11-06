@@ -29,3 +29,15 @@ candidate-v03/training/RECIPE.json -text whitespace=cr-at-eol
 candidate-v03/training/ISOLATION_AUDIT.json -text whitespace=cr-at-eol
 candidate-v03/training/TRAINING_RESULT.json -text whitespace=cr-at-eol
 candidate-v03/licenses/** -text whitespace=cr-at-eol
+
+# Preserve original Python bytes after development relocation.
+dependencies/exact32/adaptive_evidence/*.py -text
+retrieval/eviweave/experimental/corpus_index.py -text
+retrieval/eviweave/experimental/content_tokens.py -text
+retrieval/eviweave/experimental/token_scorer.py -text
+retrieval/eviweave/experimental/lora_adapter.py -text
+benchmarks/tests/upstream/*.py -text
+
+# Keep development metadata hashes stable across Windows and Linux clones.
+.gitignore text eol=lf
+LICENSE text eol=lf

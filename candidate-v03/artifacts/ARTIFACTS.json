@@ -1,0 +1,526 @@
+{
+  "schema": 1,
+  "candidate_id": "eviweave-v03-search-credit-v34-cpu-reference-v36",
+  "manifest_sha256": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+  "public_bundle": {
+    "filename": "eviweave-v03-public-startup-20261104.zip",
+    "bytes": 7467157,
+    "sha256": "f223d013bf2e713f490ddf28bc68976d60b2beab564ddb8472929246da8ee373",
+    "files": 67,
+    "url": "https://raw.githubusercontent.com/qhcsmu/eviweave/082390824fae661659557adc74de14251522904e/candidate-v03/artifacts/eviweave-v03-public-startup-20261104.zip"
+  },
+  "controlled_bundle": {
+    "filename": "eviweave-v03-controlled-startup-20261104.zip",
+    "bytes": 7911038,
+    "sha256": "e204354df5ebcd234eae0ad0ad07751019bb1bb6a76ac7d106c5e9ed6c0067d2",
+    "files": 11,
+    "distribution": "local controlled handoff to operator; not published to GitHub; send to AML only via their confirmed channel"
+  },
+  "adapter": {
+    "filename": "adapter-step80.safetensors",
+    "bytes": 788584,
+    "sha256": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+    "license": "MIT",
+    "url": "https://raw.githubusercontent.com/qhcsmu/eviweave/082390824fae661659557adc74de14251522904e/candidate-v03/artifacts/adapter-step80.safetensors"
+  },
+  "files": [
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/METRIC_SPACE_V29_DESIGN_NOTE.md",
+      "sha256": "4d090b6df3ca36e1ba2f670cfc434284ae0a46f2de67adfc82281e2441edb9c7",
+      "bytes": 2359,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v34/CPU_RUNTIME_CONTRACT/PROCESS_EXIT.json",
+      "sha256": "89ba716e8e784a610717e4901a6689b0cc414ba063937a9ed4b816da8e4381ed",
+      "bytes": 230,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v34/CPU_RUNTIME_CONTRACT/RESULT.json",
+      "sha256": "f7ad578f262fe3f7982141edfb597044f6c02da3a0552ba3b8986d7c48b77438",
+      "bytes": 799,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/LINUX_RESIDENT_RUNTIME_SUPPLEMENT.json",
+      "bytes": 14272,
+      "sha256": "b737d67c668a8ba7e620ff962b17dcf069163e6da177708360cf30b4ba3e54ea",
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/MANIFEST.json",
+      "sha256": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+      "bytes": 7013,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/SOURCE128/INDEPENDENT_AUDIT.json",
+      "sha256": "0905c87f6e6ad0ae3c4e94ff26748364f5c4c4653a53d5045b10bb25fc1e5f96",
+      "bytes": 386,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/SOURCE128/PROCESS_EXIT.json",
+      "sha256": "2b66b6f1ec6ce6839ed2c549773b0cc5bf9673404da0a8307896118101f803e8",
+      "bytes": 230,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/SOURCE128/RESULT.json",
+      "sha256": "1de0b6c948aaaea2a9ba2f6880bcdc30d11afef6d9a5e3b20db699d678841f41",
+      "bytes": 4299,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/SOURCE_PROTOCOL.json",
+      "sha256": "7181ded46e9bc56c0266070dc83feb6816d709d77c336d71b1c469743d446528",
+      "bytes": 2353,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/audit_source.py",
+      "sha256": "7456b509c0cad77336841901b7c815eb47d5aa3cccc3929a51f792193ea9b69e",
+      "bytes": 3036,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/build_manifest.py",
+      "sha256": "be095bf42aa12a28f155a1ba124352be8d765162e7233b4791d50b653b362349",
+      "bytes": 3077,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/deploy.py",
+      "sha256": "ab5ac91a947cbfad90d0471638dcf5eed2c4fd6abda6af0d6e7af02089cf3f9a",
+      "bytes": 9700,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/direct_scorer.py",
+      "sha256": "e294aa760d39f95cb93d49f52120219f9ab6a7227a8987166ff6f965e948af17",
+      "bytes": 5759,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/linux_owner_resident.py",
+      "sha256": "5ca16a348e2a4d70d975ff7d57f77493f6af1fddae4c3db35b00a06c000caeef",
+      "bytes": 1905,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/rpc_server.py",
+      "sha256": "2c457af83b6d03cbd6148c081e7a055e26fce857d9416d11c56949f979fb5d24",
+      "bytes": 7798,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/rpc_server_resident.py",
+      "sha256": "e6be1bbe105b6998e0b1e9e493e5c93ce5e5c024ad4475133b4c687f5f6016dd",
+      "bytes": 8157,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/runtime_store.py",
+      "sha256": "ddf093aa7f90c2a585455553c9da04511b95830a3b5c50514e093821acdd7f97",
+      "bytes": 6187,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/server.py",
+      "sha256": "c505548adfc90de569e154e54eb42a5b6c2d8626073e61544a5b157ae43c1bad",
+      "bytes": 2381,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/service_owner.py",
+      "sha256": "e71fc9ad5f8cea7fa63791b9e56ce78a92b7f2fa410eccccb562cd9d816328f7",
+      "bytes": 4605,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/transform.py",
+      "sha256": "7b20d884e8dab69039dd8e675b39fc6fdf01460c4e62220ba960d9441cfd89aa",
+      "bytes": 2706,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/deployment-v36-cpu-reference/validate_source.py",
+      "sha256": "085daa6edc1063f1dc1f14fa8788f61db771993b257e9fa5cd6de2cb21d85f06",
+      "bytes": 5082,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/MODEL_CARD.json",
+      "sha256": "d294f3535344fc4c0e2e004b1c736cb1b5c8b0b75565232e190c23ee76e68185",
+      "bytes": 1236,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/RECIPE.json",
+      "sha256": "8dcd11744b0620a75cd40ca03446e08e13f7a0b92b34389c2fc951575fa9365a",
+      "bytes": 5924,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/freeze.py",
+      "sha256": "261b92b73e2ebd574026e4bf89f0432fa52171fface61723c7c4578d0d9289f2",
+      "bytes": 5518,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/metric_model.py",
+      "sha256": "d277ca2d5d93f776789d7ebfd564d26b3fb1f95bd6d7912ce7ceb3438995e5e8",
+      "bytes": 11014,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/metrics.py",
+      "sha256": "a4107d207883472fb4a16b394e87643209ec808b22eced204b56e17f5cff612a",
+      "bytes": 2675,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/preflight.py",
+      "sha256": "d6934f6cf1ef237796ca7942fc3b73c60cf9da70171f9cd52764b8ef8190f47c",
+      "bytes": 4828,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/preflight/RESULT.json",
+      "sha256": "8919cc1890f5e5ccc1cd64c6c6d615741a20fcb1bc594e45b4b25e2a40db4ca2",
+      "bytes": 1213,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepare.py",
+      "sha256": "73ddf056ed3187cbe0ea43e686f5f644a9317a5793f8158f31d1f1fc8b4a6d1d",
+      "bytes": 10997,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/DATA.json",
+      "sha256": "12a72026ab548be1eb6a65d2c24bb0ea2b5b4e2bb0a99be639fe63fd776adb50",
+      "bytes": 21875754,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/RESULT.json",
+      "sha256": "b7357ab25a54f428853258ccb49998b501e20daa891a3dbbe049842d11d3c616",
+      "bytes": 917,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/SCHEDULE.json",
+      "sha256": "e7123266f9086178232d62436354eb79a853fd6d23badc8304d2b37dc66a536b",
+      "bytes": 210665,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/SOURCE_FREEZE.json",
+      "sha256": "121377d1750348b654ee6d903f754ad5936d0eb22d9c14553346d08a63beacd9",
+      "bytes": 3780,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/prepared/completion.json",
+      "sha256": "07a3f5f0a9f4bb2d261bc47cf3688efbb48e43861b1a35cc05747f4b6f01605f",
+      "bytes": 114,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/run-step80/RESULT.json",
+      "sha256": "4404177be449a8d0538a39f9b827b9ab1b1bf587af91a878370e12516d4a834c",
+      "bytes": 4540,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/run-step80/adapter-step80.safetensors",
+      "sha256": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+      "bytes": 788584,
+      "acquisition": "adapter"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/run-step80/completion.json",
+      "sha256": "19e5888732c8572d1ca1b817999481db038a0e7b54dcecfb8ae928921e88d75e",
+      "bytes": 114,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/run.py",
+      "sha256": "0ccbc1349ebb0cf4e2c0593e8a29a1e05e5f047feefbe8636b88a5098210ed6b",
+      "bytes": 12032,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v29/wait_and_run.py",
+      "sha256": "ef93a6c1bc054099f2385a0cfe2d520a3d67b56531d65acbf2a31b53f31d5438",
+      "bytes": 3398,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v33-timestamp-credit/temporal_headers.py",
+      "sha256": "b7b288ab588ee5400fcbcf262cc577ac6dc924483840c2b64ebad9073a1d85cf",
+      "bytes": 1603,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/metric-space-v34-search-credit/search_credit.py",
+      "sha256": "ac678bc6ff6e55507ab51cb4477acbe9104bc7763f86c3dda01adfd0a6c1fe69",
+      "bytes": 7318,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/model_lock.py",
+      "sha256": "eaaff9ddbe57492a78200a4c5b5c02281b7fad33791e507665e5a563fdb330d7",
+      "bytes": 1186,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/query-gate-v16-readiness/FEATURE_INDEX.json",
+      "sha256": "0260f2ff99842d3f4215fda0537a30d677ba485786ee40cc51b80532c5ed5f51",
+      "bytes": 350463,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/query-gate-v16-readiness/PLAN_FREEZE.json",
+      "sha256": "a187f54e75533c7f598c7f0d87abc2f9288b20d94491bcf47bcecedc3236b236",
+      "bytes": 4302,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/v2-diagnosis/training-source-isolation-v9/DOCUMENT_EXCLUSION_LEDGER.json",
+      "sha256": "9b9a1aebbe41c10f8edb75c7ab275a26be52bda7a442ae6bd877d2839e6b856d",
+      "bytes": 3991985,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/v2-diagnosis/training-source-isolation-v9/QUERY_EXCLUSION_LEDGER.json",
+      "sha256": "d051d03340e321413de03c26552f8a4b471467247319bbe6b31d696eeb2a1e6c",
+      "bytes": 260471,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/v2-diagnosis/training-source-isolation-v9/RESULT.json",
+      "sha256": "a30ba5601039c98eaebb02e5b1f5372712d091cc00addef7637d7259187cfe52",
+      "bytes": 3032,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/v2-diagnosis/training-target-granularity-v13b/RESULT.json",
+      "sha256": "db83b47b91a88ce2aa3560aa5275db54146fa5494f44d1857bf9f347177787f8",
+      "bytes": 11407,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/research/parallel-seven-20261030/03-token-retrieval/v2-diagnosis/training-target-granularity-v13b/case-metadata.json",
+      "sha256": "0e9a57447b77fa59836bdefc5d474d7e7e708740b760f93c8529bec8bb17dd68",
+      "bytes": 393718,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/runs/sourcetrail-colbert-full-history-20261017/training-banks.json",
+      "sha256": "2d69609d65fe5dbfd65c6759780f623e9f236d8c132cafc2bb638dcad249831e",
+      "bytes": 8028263,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "competition/runs/sourcetrail-colbert-full-history-20261017/training-cases.json",
+      "sha256": "a891729c699552d0cd6e513684ae81cf18403a4c79e2def16fff8491c25ef5b6",
+      "bytes": 218160,
+      "acquisition": "controlled_bundle"
+    },
+    {
+      "path": "dist/sourcetrail-v500-full-history-20261017/adaptive_evidence/core.py",
+      "sha256": "a0b643f9b2c975cce44a0869431947501361e4ddd42e6b552f9983d9bc7df758",
+      "bytes": 31074,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "dist/sourcetrail-v500-full-history-20261017/adaptive_evidence/lora_adapter.py",
+      "sha256": "231a08f851ab0006c6bc3c54c47d401273989f4346242ccc4fbffa1c8607b982",
+      "bytes": 3328,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "dist/sourcetrail-v500-full-history-20261017/adaptive_evidence/token_scorer.py",
+      "sha256": "315d7cd1217180889f63c87ea580c7fae562121d8a851671f6479616eae7ca34",
+      "bytes": 8054,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/config.json",
+      "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670",
+      "bytes": 3161,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/merges.txt",
+      "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+      "bytes": 3353259,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/model.safetensors.index.json",
+      "sha256": "cf3f798ee02ba45f9622aa8892a47369ab667d0afbf154ee7c2212de42e6302d",
+      "bytes": 76196,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/preprocessor_config.json",
+      "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+      "bytes": 390,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/tokenizer.json",
+      "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "bytes": 12807982,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/tokenizer_config.json",
+      "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+      "bytes": 16710,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/video_preprocessor_config.json",
+      "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+      "bytes": 385,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/Qwen3.5-4B/vocab.json",
+      "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+      "bytes": 6722759,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/colbertv2.0/artifact.metadata",
+      "sha256": "0ddc5a54234cff6d13bc9411250a5479d9d96f3ffbace76d8a1884144377e434",
+      "bytes": 1633,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/colbertv2.0/config.json",
+      "sha256": "cbdcc01dc7772fd0e5e1d85d5de695faf8c4935ae3c7ea3fdb6c24397b284f3c",
+      "bytes": 743,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/colbertv2.0/model.safetensors",
+      "sha256": "3f58890b1dfdfec066ef12ba431fa9d56992da9e30a53489242c4156e37e9017",
+      "bytes": 438349816,
+      "acquisition": "upstream_base"
+    },
+    {
+      "path": "models/colbertv2.0/special_tokens_map.json",
+      "sha256": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "bytes": 112,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/colbertv2.0/tokenizer.json",
+      "sha256": "5fd1c882abbd30517dced455a2c9768945ec726b96727927e4959348d9de550b",
+      "bytes": 466081,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/colbertv2.0/tokenizer_config.json",
+      "sha256": "a16a31c8d474339d7a46afe7eb8583b24f8b74806af6e25294506523f9d0acfb",
+      "bytes": 405,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "models/colbertv2.0/vocab.txt",
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "bytes": 231508,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/__init__.py",
+      "sha256": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+      "bytes": 115,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/api.py",
+      "sha256": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+      "bytes": 5745,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/core.py",
+      "sha256": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+      "bytes": 30468,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/encoder.py",
+      "sha256": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+      "bytes": 2287,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/evidence_windows.py",
+      "sha256": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+      "bytes": 3671,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/focused_packing.py",
+      "sha256": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+      "bytes": 6621,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/passage_packing.py",
+      "sha256": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+      "bytes": 5570,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/remote_encoder.py",
+      "sha256": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+      "bytes": 8494,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/retrieval_views.py",
+      "sha256": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+      "bytes": 6069,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/source_links.py",
+      "sha256": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+      "bytes": 1017,
+      "acquisition": "public_bundle"
+    },
+    {
+      "path": "repos/context-weave/best32-baseline/adaptive_evidence/source_prior.py",
+      "sha256": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+      "bytes": 1482,
+      "acquisition": "public_bundle"
+    }
+  ],
+  "scope": "Exact original startup file checks only. Not runtime numeric validation, model admission, or an evaluation-data release.",
+  "controlled_reason": "Contains original public training text (including excluded overlaps), token IDs, annotation schedules and evaluation exclusion fingerprints. Keep off public GitHub.",
+  "upstream_base": {
+    "url": "https://huggingface.co/colbert-ir/colbertv2.0/resolve/c1e84128e85ef755c096a95bdb06b47793b13acf/model.safetensors",
+    "bytes": 438349816,
+    "sha256": "3f58890b1dfdfec066ef12ba431fa9d56992da9e30a53489242c4156e37e9017",
+    "filename": "colbertv2.0-model.safetensors"
+  },
+  "not_included": [
+    "production credentials",
+    "user memory database",
+    "official Add/Search request payloads",
+    "official answers/options/prompts",
+    "wheels, OS libraries and Python binary",
+    "old process locks/PIDs",
+    "activation state"
+  ],
+  "asset_commit": "082390824fae661659557adc74de14251522904e"
+}

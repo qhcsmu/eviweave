@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "system": "EviWeave: retrieval and model artifacts",
+  "before_commit": "082390824fae661659557adc74de14251522904e",
+  "release_paths_preserved": true,
+  "original_files": {
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "before_sha256": "37262de463b091b99a29f1314e78e9b64fdd3c74ba20895ccc92738f4f2d9ce6",
+      "adapted": true
+    },
+    ".github/workflows/tests.yml": {
+      "path": ".github/workflows/tests.yml",
+      "before_sha256": "58a08935649ab2caaf3b7d12c52360ed93328fbf2a2569f3386f252ab76e61ea",
+      "adapted": true
+    },
+    ".gitignore": {
+      "path": ".gitignore",
+      "before_sha256": "ddb864af710cffdb8c3ff23702a2edc5927278ef100ddfc6b31b8aaf9c7eaa12",
+      "adapted": true
+    },
+    "CHANGELOG.md": {
+      "path": "CHANGELOG.md",
+      "before_sha256": "6968050bdb69aeaa52d74f6c870351e409feaecca4214f78c7419884be6fcd0a",
+      "adapted": false
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "before_sha256": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+      "adapted": false
+    },
+    "PROVENANCE.md": {
+      "path": "PROVENANCE.md",
+      "before_sha256": "3cf689187d2f5f48756708b58d5f6fc2d6ad491cd427fa87d240d4fc77081545",
+      "adapted": true
+    },
+    "README.md": {
+      "path": "README.md",
+      "before_sha256": "a466720a68e4fb62bfb065b1ac0809c79a8b739ebc1c9cc7db35d6cee0246096",
+      "adapted": true
+    },
+    "RUNNING.md": {
+      "path": "model_notes/DEVELOPMENT.md",
+      "before_sha256": "00ff55dd0d50535d2cef08fecfa0203d7c1527d5b598ea2812a8a6345ad43bed",
+      "adapted": true
+    },
+    "SUBMISSION.md": {
+      "path": "SUBMISSION.md",
+      "before_sha256": "8d95258362f668399b5e79fabde748db1ee511ee8841bdd65c7444c0a0077850",
+      "adapted": true
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "before_sha256": "4211c9c8f232b778020cbfc6508eed86c4c7dbeefd836a0d05cc8053a325d99f",
+      "adapted": true
+    },
+    "adaptive_evidence/__init__.py": {
+      "path": "dependencies/exact32/adaptive_evidence/__init__.py",
+      "before_sha256": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+      "adapted": false
+    },
+    "adaptive_evidence/api.py": {
+      "path": "dependencies/exact32/adaptive_evidence/api.py",
+      "before_sha256": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+      "adapted": false
+    },
+    "adaptive_evidence/core.py": {
+      "path": "dependencies/exact32/adaptive_evidence/core.py",
+      "before_sha256": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+      "adapted": false
+    },
+    "adaptive_evidence/encoder.py": {
+      "path": "dependencies/exact32/adaptive_evidence/encoder.py",
+      "before_sha256": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+      "adapted": false
+    },
+    "adaptive_evidence/evidence_windows.py": {
+      "path": "dependencies/exact32/adaptive_evidence/evidence_windows.py",
+      "before_sha256": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+      "adapted": false
+    },
+    "adaptive_evidence/focused_packing.py": {
+      "path": "dependencies/exact32/adaptive_evidence/focused_packing.py",
+      "before_sha256": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+      "adapted": false
+    },
+    "adaptive_evidence/passage_packing.py": {
+      "path": "dependencies/exact32/adaptive_evidence/passage_packing.py",
+      "before_sha256": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+      "adapted": false
+    },
+    "adaptive_evidence/remote_encoder.py": {
+      "path": "dependencies/exact32/adaptive_evidence/remote_encoder.py",
+      "before_sha256": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+      "adapted": false
+    },
+    "adaptive_evidence/retrieval_views.py": {
+      "path": "dependencies/exact32/adaptive_evidence/retrieval_views.py",
+      "before_sha256": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+      "adapted": false
+    },
+    "adaptive_evidence/source_links.py": {
+      "path": "dependencies/exact32/adaptive_evidence/source_links.py",
+      "before_sha256": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+      "adapted": false
+    },
+    "adaptive_evidence/source_prior.py": {
+      "path": "dependencies/exact32/adaptive_evidence/source_prior.py",
+      "before_sha256": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+      "adapted": false
+    },
+    "candidate-v03/CAPACITY.md": {
+      "path": "candidate-v03/CAPACITY.md",
+      "before_sha256": "d1dedd82407d5f9815f656a2f03d64e51b450737642481a9b723df2de3c93ebf",
+      "adapted": false
+    },
+    "candidate-v03/DEPLOYED_MANIFEST.json": {
+      "path": "candidate-v03/DEPLOYED_MANIFEST.json",
+      "before_sha256": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+      "adapted": false
+    },
+    "candidate-v03/EVALUATION.md": {
+      "path": "candidate-v03/EVALUATION.md",
+      "before_sha256": "84717065ed188b4662d96fc2625608d2f7e54d25fb645d78f4ac9a645854fe3e",
+      "adapted": false
+    },
+    "candidate-v03/FULL_RESULT.json": {
+      "path": "candidate-v03/FULL_RESULT.json",
+      "before_sha256": "98ffd44e9f823c32320bc7adece31a9e6ef4f117c9da0552d520d30ef7afb546",
+      "adapted": false
+    },
+    "candidate-v03/LINUX_RUNTIME.md": {
+      "path": "candidate-v03/LINUX_RUNTIME.md",
+      "before_sha256": "b03e9d74262104b84fc00c69be0a2435ad20aa7168dcc98c19762fde2c7efc1b",
+      "adapted": true
+    },
+    "candidate-v03/MODEL_IDENTITY.json": {
+      "path": "candidate-v03/MODEL_IDENTITY.json",
+      "before_sha256": "d2c880ccf7e63a88e4ceebe7dea9741991990d9565bdce624904e7d98625216f",
+      "adapted": true
+    },
+    "candidate-v03/README.md": {
+      "path": "candidate-v03/README.md",
+      "before_sha256": "a608ac75b99b5f97661030b89c854c00f96ea445e318f03137e3918ae4730fc7",
+      "adapted": true
+    },
+    "candidate-v03/SOURCE_MAP.json": {
+      "path": "candidate-v03/SOURCE_MAP.json",
+      "before_sha256": "47555a12b6cf22288d36c681a6a75c2f59fd527f6d4e9e37b35626a4c8f3f87d",
+      "adapted": false
+    },
+    "candidate-v03/artifacts/adapter-step80.safetensors": {
+      "path": "candidate-v03/artifacts/adapter-step80.safetensors",
+      "before_sha256": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+      "adapted": false
+    },
+    "candidate-v03/artifacts/eviweave-v03-public-startup-20261104.zip": {
+      "path": "candidate-v03/artifacts/eviweave-v03-public-startup-20261104.zip",
+      "before_sha256": "f223d013bf2e713f490ddf28bc68976d60b2beab564ddb8472929246da8ee373",
+      "adapted": false
+    },
+    "candidate-v03/licenses/CC-BY-4.0.txt": {
+      "path": "candidate-v03/licenses/CC-BY-4.0.txt",
+      "before_sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "adapted": false
+    },
+    "candidate-v03/licenses/COLBERT-MIT.txt": {
+      "path": "candidate-v03/licenses/COLBERT-MIT.txt",
+      "before_sha256": "641c1a7fc3e22f3ea8521617c690213f0d741bf95ff35eeba99b34ff2102e0ae",
+      "adapted": false
+    },
+    "candidate-v03/licenses/QWEN-APACHE-2.0.txt": {
+      "path": "candidate-v03/licenses/QWEN-APACHE-2.0.txt",
+      "before_sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/SUPPLEMENT_MANIFEST.json": {
+      "path": "candidate-v03/runtime-linux/SUPPLEMENT_MANIFEST.json",
+      "before_sha256": "9f810ade410bfb3515853780c440cdc2e6326023f72469c45ecaa1002d1f9839",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/VALIDATION.json": {
+      "path": "candidate-v03/runtime-linux/VALIDATION.json",
+      "before_sha256": "9143e7d667e04d3f31d3734b6388b1c3d867ce87171dba9b70ef85550773e1b5",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/eviweave-m02-token.service": {
+      "path": "candidate-v03/runtime-linux/eviweave-m02-token.service",
+      "before_sha256": "7024f1511621e4f2e5038a9cadc05733ec5031dcd2e47fc31f0e16b65344af68",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/requirements.freeze.txt": {
+      "path": "candidate-v03/runtime-linux/requirements.freeze.txt",
+      "before_sha256": "6dade856b275d1cdecac881eb1382d5ef74a20818ef794c6684f8a498f59aa67",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/source/linux_owner_resident.py": {
+      "path": "candidate-v03/runtime-linux/source/linux_owner_resident.py",
+      "before_sha256": "5ca16a348e2a4d70d975ff7d57f77493f6af1fddae4c3db35b00a06c000caeef",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/source/process_check_resident.py": {
+      "path": "candidate-v03/runtime-linux/source/process_check_resident.py",
+      "before_sha256": "e66d9ec06706517147b7ec1f8baab8b47e291636380971492ad477262c270d2f",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/source/remote_encoder.py": {
+      "path": "candidate-v03/runtime-linux/source/remote_encoder.py",
+      "before_sha256": "5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3",
+      "adapted": false
+    },
+    "candidate-v03/runtime-linux/source/rpc_server_resident.py": {
+      "path": "candidate-v03/runtime-linux/source/rpc_server_resident.py",
+      "before_sha256": "e6be1bbe105b6998e0b1e9e493e5c93ce5e5c024ad4475133b4c687f5f6016dd",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/audit_source.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/audit_source.py",
+      "before_sha256": "7456b509c0cad77336841901b7c815eb47d5aa3cccc3929a51f792193ea9b69e",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/build_manifest.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/build_manifest.py",
+      "before_sha256": "be095bf42aa12a28f155a1ba124352be8d765162e7233b4791d50b653b362349",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/deploy.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/deploy.py",
+      "before_sha256": "ab5ac91a947cbfad90d0471638dcf5eed2c4fd6abda6af0d6e7af02089cf3f9a",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/direct_scorer.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/direct_scorer.py",
+      "before_sha256": "e294aa760d39f95cb93d49f52120219f9ab6a7227a8987166ff6f965e948af17",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/rpc_server.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/rpc_server.py",
+      "before_sha256": "2c457af83b6d03cbd6148c081e7a055e26fce857d9416d11c56949f979fb5d24",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/runtime_store.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/runtime_store.py",
+      "before_sha256": "ddf093aa7f90c2a585455553c9da04511b95830a3b5c50514e093821acdd7f97",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/server.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/server.py",
+      "before_sha256": "c505548adfc90de569e154e54eb42a5b6c2d8626073e61544a5b157ae43c1bad",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/service_owner.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/service_owner.py",
+      "before_sha256": "e71fc9ad5f8cea7fa63791b9e56ce78a92b7f2fa410eccccb562cd9d816328f7",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/transform.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/transform.py",
+      "before_sha256": "7b20d884e8dab69039dd8e675b39fc6fdf01460c4e62220ba960d9441cfd89aa",
+      "adapted": false
+    },
+    "candidate-v03/source/deployment-v36-cpu-reference/validate_source.py": {
+      "path": "candidate-v03/source/deployment-v36-cpu-reference/validate_source.py",
+      "before_sha256": "085daa6edc1063f1dc1f14fa8788f61db771993b257e9fa5cd6de2cb21d85f06",
+      "adapted": false
+    },
+    "candidate-v03/source/metric-space-v29/metric_model.py": {
+      "path": "candidate-v03/source/metric-space-v29/metric_model.py",
+      "before_sha256": "d277ca2d5d93f776789d7ebfd564d26b3fb1f95bd6d7912ce7ceb3438995e5e8",
+      "adapted": false
+    },
+    "candidate-v03/source/metric-space-v33-timestamp-credit/temporal_headers.py": {
+      "path": "candidate-v03/source/metric-space-v33-timestamp-credit/temporal_headers.py",
+      "before_sha256": "b7b288ab588ee5400fcbcf262cc577ac6dc924483840c2b64ebad9073a1d85cf",
+      "adapted": false
+    },
+    "candidate-v03/source/metric-space-v34-search-credit/search_credit.py": {
+      "path": "candidate-v03/source/metric-space-v34-search-credit/search_credit.py",
+      "before_sha256": "ac678bc6ff6e55507ab51cb4477acbe9104bc7763f86c3dda01adfd0a6c1fe69",
+      "adapted": false
+    },
+    "candidate-v03/training/ISOLATION_AUDIT.json": {
+      "path": "candidate-v03/training/ISOLATION_AUDIT.json",
+      "before_sha256": "a30ba5601039c98eaebb02e5b1f5372712d091cc00addef7637d7259187cfe52",
+      "adapted": false
+    },
+    "candidate-v03/training/RECIPE.json": {
+      "path": "candidate-v03/training/RECIPE.json",
+      "before_sha256": "8dcd11744b0620a75cd40ca03446e08e13f7a0b92b34389c2fc951575fa9365a",
+      "adapted": false
+    },
+    "candidate-v03/training/SOURCES.json": {
+      "path": "candidate-v03/training/SOURCES.json",
+      "before_sha256": "6cbd52f8139e3d0568fb8d3d111f1175e28f71470a3ac68951ba13257055944a",
+      "adapted": false
+    },
+    "candidate-v03/training/TRAINING_RESULT.json": {
+      "path": "candidate-v03/training/TRAINING_RESULT.json",
+      "before_sha256": "4404177be449a8d0538a39f9b827b9ab1b1bf587af91a878370e12516d4a834c",
+      "adapted": false
+    },
+    "docs/RESEARCH_STATUS.md": {
+      "path": "model_notes/RESEARCH_STATUS.md",
+      "before_sha256": "a5ce8a0f6f215465bfc5e31e63405d5d3ce893f5239204b9e3db8fd2dd7daa9b",
+      "adapted": false
+    },
+    "docs/VALIDATION.md": {
+      "path": "model_notes/VALIDATION.md",
+      "before_sha256": "3f374daa63d661f67c231dd17ff971424ad40094374630733a71f3e33a01f647",
+      "adapted": true
+    },
+    "docs/source-manifest.json": {
+      "path": "docs/source-manifest.json",
+      "before_sha256": "a80bdbf19b408206c8aa8237e5e74689a770b745f7d95c3940a0f9f6ea0afcb9",
+      "adapted": false
+    },
+    "eviweave/__init__.py": {
+      "path": "retrieval/eviweave/__init__.py",
+      "before_sha256": "210e0c2e8333cfdd106bdfa89d926529a35017ae4e7e1b03ba87002df00727de",
+      "adapted": false
+    },
+    "eviweave/__main__.py": {
+      "path": "retrieval/eviweave/__main__.py",
+      "before_sha256": "eebfae806f375fa28362506a9fb3325fb792d39f6c3a6458fa5a104945f3e0e8",
+      "adapted": false
+    },
+    "eviweave/api.py": {
+      "path": "retrieval/eviweave/api.py",
+      "before_sha256": "c592403cb7de0781e3a1537fbc437178ff3d22c5cbd21fbe072f7c34c14a94ec",
+      "adapted": false
+    },
+    "eviweave/encoders.py": {
+      "path": "retrieval/eviweave/encoders.py",
+      "before_sha256": "36884911eef9ef4251f154e21b6a074657a95b32bfcedcccfa7e0fad39460f9b",
+      "adapted": false
+    },
+    "eviweave/experimental/__init__.py": {
+      "path": "retrieval/eviweave/experimental/__init__.py",
+      "before_sha256": "d05b507fc4325f63b0ee58c02258f6fa774c3ae620ee4dfd58d43b5805b83e6c",
+      "adapted": false
+    },
+    "eviweave/experimental/content_tokens.py": {
+      "path": "retrieval/eviweave/experimental/content_tokens.py",
+      "before_sha256": "8935faacf8bd71d73637f64a867f300b57a2b1313ff47b6029dfb4049db71468",
+      "adapted": false
+    },
+    "eviweave/experimental/corpus_index.py": {
+      "path": "retrieval/eviweave/experimental/corpus_index.py",
+      "before_sha256": "4c28780043a7f525a5eff9cdaac5912eec43c3a82b37cd105af387814236a7b2",
+      "adapted": false
+    },
+    "eviweave/experimental/guards.py": {
+      "path": "retrieval/eviweave/experimental/guards.py",
+      "before_sha256": "78179f1714b5d12e517615a6824b1df2b76f502771fcd6158d32ad214c7409b2",
+      "adapted": false
+    },
+    "eviweave/experimental/lora_adapter.py": {
+      "path": "retrieval/eviweave/experimental/lora_adapter.py",
+      "before_sha256": "231a08f851ab0006c6bc3c54c47d401273989f4346242ccc4fbffa1c8607b982",
+      "adapted": false
+    },
+    "eviweave/experimental/token_scorer.py": {
+      "path": "retrieval/eviweave/experimental/token_scorer.py",
+      "before_sha256": "315d7cd1217180889f63c87ea580c7fae562121d8a851671f6479616eae7ca34",
+      "adapted": false
+    },
+    "eviweave/locking.py": {
+      "path": "retrieval/eviweave/locking.py",
+      "before_sha256": "ecbcb936784838b88569a46e284348198957e23ce8b8c46f813db3040b76f641",
+      "adapted": false
+    },
+    "eviweave/runtime.py": {
+      "path": "retrieval/eviweave/runtime.py",
+      "before_sha256": "78c84a05380609dfb072724e31d8a5ce6772489a9bc0d446e9d3c8790fa1b322",
+      "adapted": false
+    },
+    "examples/client.py": {
+      "path": "benchmarks/examples/client.py",
+      "before_sha256": "3a7c91d9671c9283a66c960071fb218dbee08bdb025c1d1940610a22d7761fa3",
+      "adapted": false
+    },
+    "preflight.py": {
+      "path": "preflight.py",
+      "before_sha256": "d4d04182cc033f8843a088ebc6115c90786b2625befc97c23354dc9893061a17",
+      "adapted": false
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "before_sha256": "ebe8f56ea45c11785582e25a6712a63cb9ebd75234fcaa8bfc97d77b34752b74",
+      "adapted": true
+    },
+    "tests/test_corpus_index.py": {
+      "path": "benchmarks/tests/test_corpus_index.py",
+      "before_sha256": "e1fa46a718b3fafa9d76d367e4d68eeec16dd1a698e39618736e86374f9be760",
+      "adapted": false
+    },
+    "tests/test_eviweave.py": {
+      "path": "benchmarks/tests/test_eviweave.py",
+      "before_sha256": "5ad85d459771e4740b9e4344cd3d7dc27e2759806dcfb958a1733b7525628de5",
+      "adapted": false
+    },
+    "tests/upstream/test_adaptive.py": {
+      "path": "benchmarks/tests/upstream/test_adaptive.py",
+      "before_sha256": "79fcd31ab327a80a1e145fded1c8f69845cb36ceb28ca1d76b34e778e14fd4d9",
+      "adapted": false
+    },
+    "tests/upstream/test_answer_only.py": {
+      "path": "benchmarks/tests/upstream/test_answer_only.py",
+      "before_sha256": "f17cc69e098e7cb46e0fb2806f694f83173b2bcd904b73be9beeb21ee9424a8a",
+      "adapted": false
+    },
+    "tests/upstream/test_coherent_sources.py": {
+      "path": "benchmarks/tests/upstream/test_coherent_sources.py",
+      "before_sha256": "92d715071082ca16e6340b2911666a008b9d4f44675a1370f8dee469157c1049",
+      "adapted": false
+    },
+    "tests/upstream/test_contract.py": {
+      "path": "benchmarks/tests/upstream/test_contract.py",
+      "before_sha256": "b89cbbfc49f6fb0a7b2f2c0260e2dfa7d2335ffc3b813f31f7593260b52c96ae",
+      "adapted": false
+    },
+    "tests/upstream/test_evidence_budget.py": {
+      "path": "benchmarks/tests/upstream/test_evidence_budget.py",
+      "before_sha256": "c41047949df0e9b65d38056de3607786ba7660a103c2b0ac3db5779645d6cd7d",
+      "adapted": false
+    },
+    "tests/upstream/test_evidence_windows.py": {
+      "path": "benchmarks/tests/upstream/test_evidence_windows.py",
+      "before_sha256": "04fadc9a3c1b612aba1f180ad1ee2fdff3a7f260eaf4a2d6483807273e742e97",
+      "adapted": false
+    },
+    "tests/upstream/test_focused_packing.py": {
+      "path": "benchmarks/tests/upstream/test_focused_packing.py",
+      "before_sha256": "1c68b0a961201c5cd7125b7914afa5dcdc2d498dc501741f18fb532f128b5c72",
+      "adapted": false
+    },
+    "tests/upstream/test_query_documents.py": {
+      "path": "benchmarks/tests/upstream/test_query_documents.py",
+      "before_sha256": "e0e0d1218cf7fc99c30ae682c08ce0794e945174e46e523478c2e52a6e2d3c28",
+      "adapted": false
+    },
+    "tests/upstream/test_remote_encoder.py": {
+      "path": "benchmarks/tests/upstream/test_remote_encoder.py",
+      "before_sha256": "8b001763ae71afe331533c03e684ccf81087223e8fafc486c8ac6d7aaa4e51c4",
+      "adapted": false
+    },
+    "tests/upstream/test_retrieval_views.py": {
+      "path": "benchmarks/tests/upstream/test_retrieval_views.py",
+      "before_sha256": "2f626a56be75b4293c0bf1e77ce0b6684ba159da58ebe69afea3651020e1e4a9",
+      "adapted": false
+    },
+    "tools/release_audit.py": {
+      "path": "artifacts/tools/release_audit.py",
+      "before_sha256": "a22b5966bed9d77ffcb63352f78d82c0f7727ca6f0a709fe4eb24cbf70fb0be4",
+      "adapted": true
+    },
+    "tools/verify_v03_snapshot.py": {
+      "path": "artifacts/tools/verify_v03_snapshot.py",
+      "before_sha256": "ccff174a60697fe6b7810918fa485b4fac556da3e8f750c4a64707a13b20fc89",
+      "adapted": true
+    },
+    "tools/verify_v03_supplement.py": {
+      "path": "artifacts/tools/verify_v03_supplement.py",
+      "before_sha256": "0ee8df255d89679c5e6788e4f8c47ee061f1bc4fd493c3c32f1592afdd2e828f",
+      "adapted": true
+    }
+  },
+  "protected_files": {
+    "candidate-v03/ARTIFACT_ACCESS.md": "9e99c0d1b0c2d5b7b3afcfe9d1b57707e233fa6b983b63ca23ab7fde69db23f7",
+    "candidate-v03/CAPACITY.md": "d1dedd82407d5f9815f656a2f03d64e51b450737642481a9b723df2de3c93ebf",
+    "candidate-v03/DEPLOYED_MANIFEST.json": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+    "candidate-v03/EVALUATION.md": "84717065ed188b4662d96fc2625608d2f7e54d25fb645d78f4ac9a645854fe3e",
+    "candidate-v03/FULL_RESULT.json": "98ffd44e9f823c32320bc7adece31a9e6ef4f117c9da0552d520d30ef7afb546",
+    "candidate-v03/LINUX_RUNTIME.md": "3abc4d1334f77d2a6b26e6854059ad27023f5388f53d3113ba32b08b5f7e84a2",
+    "candidate-v03/MODEL_CARD.md": "0dd1557234cca896a3d7960c455de69108316d274fe193e6e098a6a5134f2065",
+    "candidate-v03/MODEL_IDENTITY.json": "cdc0940b5a0f1feaef309df865514f7012a7c7953809aee4996458b3fdbf3359",
+    "candidate-v03/README.md": "17c1a19496041f6ed772a2110c14e9086529c1a6b06f28ccb05e59ae50ceb134",
+    "candidate-v03/SOURCE_MAP.json": "47555a12b6cf22288d36c681a6a75c2f59fd527f6d4e9e37b35626a4c8f3f87d",
+    "candidate-v03/artifacts/ARTIFACTS.json": "98cfa1aae1378175a0da79c317b5db091d0d4e2ecbab9cce6a1ae4eda8b1d3e5",
+    "candidate-v03/artifacts/VALIDATION.json": "f17891fe22ab8f7421373648db87a4f138ba4439b36fd939ae051cf44c71716e",
+    "candidate-v03/artifacts/adapter-step80.safetensors": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+    "candidate-v03/artifacts/eviweave-v03-public-startup-20261104.zip": "f223d013bf2e713f490ddf28bc68976d60b2beab564ddb8472929246da8ee373",
+    "candidate-v03/licenses/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "candidate-v03/licenses/COLBERT-MIT.txt": "641c1a7fc3e22f3ea8521617c690213f0d741bf95ff35eeba99b34ff2102e0ae",
+    "candidate-v03/licenses/QWEN-APACHE-2.0.txt": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "candidate-v03/runtime-linux/BUILD_INPUTS.json": "edab2c02c029985b1fc9da8a516b5137e5175990267e847b3833e9f4f48c3028",
+    "candidate-v03/runtime-linux/SUPPLEMENT_MANIFEST.json": "9f810ade410bfb3515853780c440cdc2e6326023f72469c45ecaa1002d1f9839",
+    "candidate-v03/runtime-linux/VALIDATION.json": "9143e7d667e04d3f31d3734b6388b1c3d867ce87171dba9b70ef85550773e1b5",
+    "candidate-v03/runtime-linux/eviweave-m02-token.service": "7024f1511621e4f2e5038a9cadc05733ec5031dcd2e47fc31f0e16b65344af68",
+    "candidate-v03/runtime-linux/requirements.freeze.txt": "6dade856b275d1cdecac881eb1382d5ef74a20818ef794c6684f8a498f59aa67",
+    "candidate-v03/runtime-linux/source/linux_owner_resident.py": "5ca16a348e2a4d70d975ff7d57f77493f6af1fddae4c3db35b00a06c000caeef",
+    "candidate-v03/runtime-linux/source/process_check_resident.py": "e66d9ec06706517147b7ec1f8baab8b47e291636380971492ad477262c270d2f",
+    "candidate-v03/runtime-linux/source/remote_encoder.py": "5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3",
+    "candidate-v03/runtime-linux/source/rpc_server_resident.py": "e6be1bbe105b6998e0b1e9e493e5c93ce5e5c024ad4475133b4c687f5f6016dd",
+    "candidate-v03/source/deployment-v36-cpu-reference/audit_source.py": "7456b509c0cad77336841901b7c815eb47d5aa3cccc3929a51f792193ea9b69e",
+    "candidate-v03/source/deployment-v36-cpu-reference/build_manifest.py": "be095bf42aa12a28f155a1ba124352be8d765162e7233b4791d50b653b362349",
+    "candidate-v03/source/deployment-v36-cpu-reference/deploy.py": "ab5ac91a947cbfad90d0471638dcf5eed2c4fd6abda6af0d6e7af02089cf3f9a",
+    "candidate-v03/source/deployment-v36-cpu-reference/direct_scorer.py": "e294aa760d39f95cb93d49f52120219f9ab6a7227a8987166ff6f965e948af17",
+    "candidate-v03/source/deployment-v36-cpu-reference/rpc_server.py": "2c457af83b6d03cbd6148c081e7a055e26fce857d9416d11c56949f979fb5d24",
+    "candidate-v03/source/deployment-v36-cpu-reference/runtime_store.py": "ddf093aa7f90c2a585455553c9da04511b95830a3b5c50514e093821acdd7f97",
+    "candidate-v03/source/deployment-v36-cpu-reference/server.py": "c505548adfc90de569e154e54eb42a5b6c2d8626073e61544a5b157ae43c1bad",
+    "candidate-v03/source/deployment-v36-cpu-reference/service_owner.py": "e71fc9ad5f8cea7fa63791b9e56ce78a92b7f2fa410eccccb562cd9d816328f7",
+    "candidate-v03/source/deployment-v36-cpu-reference/transform.py": "7b20d884e8dab69039dd8e675b39fc6fdf01460c4e62220ba960d9441cfd89aa",
+    "candidate-v03/source/deployment-v36-cpu-reference/validate_source.py": "085daa6edc1063f1dc1f14fa8788f61db771993b257e9fa5cd6de2cb21d85f06",
+    "candidate-v03/source/metric-space-v29/metric_model.py": "d277ca2d5d93f776789d7ebfd564d26b3fb1f95bd6d7912ce7ceb3438995e5e8",
+    "candidate-v03/source/metric-space-v33-timestamp-credit/temporal_headers.py": "b7b288ab588ee5400fcbcf262cc577ac6dc924483840c2b64ebad9073a1d85cf",
+    "candidate-v03/source/metric-space-v34-search-credit/search_credit.py": "ac678bc6ff6e55507ab51cb4477acbe9104bc7763f86c3dda01adfd0a6c1fe69",
+    "candidate-v03/training/ADMISSION_STATUS.json": "60292427ed54da3f241d025f5e3210ff914d098c05737ed54f3a2605a41dd3ea",
+    "candidate-v03/training/DATA_PROVENANCE.json": "9567e67f89d86cfe2fa1f7da645bca5f0102c97342afa5d87d0bc60f4137dc54",
+    "candidate-v03/training/ISOLATION_AUDIT.json": "a30ba5601039c98eaebb02e5b1f5372712d091cc00addef7637d7259187cfe52",
+    "candidate-v03/training/RECIPE.json": "8dcd11744b0620a75cd40ca03446e08e13f7a0b92b34389c2fc951575fa9365a",
+    "candidate-v03/training/SOURCES.json": "6cbd52f8139e3d0568fb8d3d111f1175e28f71470a3ac68951ba13257055944a",
+    "candidate-v03/training/TRAINING_RESULT.json": "4404177be449a8d0538a39f9b827b9ab1b1bf587af91a878370e12516d4a834c",
+    "docs/source-manifest.json": "a80bdbf19b408206c8aa8237e5e74689a770b745f7d95c3940a0f9f6ea0afcb9"
+  },
+  "files_sha256": {
+    ".gitattributes": "259d5cbfe896cb94e2081d1e2949eb51a185a50823e932d0de12da78c7861398",
+    ".github/workflows/tests.yml": "cd0a523fb5269824659cadb4f0d881d1f7e14ea89021378af0e3ec27385a0a58",
+    ".gitignore": "5b1f58c8acb0cf3afaef489a1b16ca63342206a441c5737cbbdb502beaf006d7",
+    "CHANGELOG.md": "6968050bdb69aeaa52d74f6c870351e409feaecca4214f78c7419884be6fcd0a",
+    "LICENSE": "5e840be8e2574ddc674ea9fac785d991d2aad1327a4a9a0f560a8cb57668c530",
+    "PROVENANCE.md": "78e8aef7e6cefae2564ce864a01642282d4abe0261277acff380738faa8de1fd",
+    "README.md": "43f223913b45fb1ba45ea7c4cee0e022e38b6ef9c9a80f21d373623b31d65fc5",
+    "SUBMISSION.md": "c2d3ac2becc57073cdbae1a1c04c62681daab2fee09b13a6258b63a020970664",
+    "THIRD_PARTY_NOTICES.md": "d19efef9cded16a910fc2843d0d0eacfecb6a43b7bfefe6ee102bd43ffb1729b",
+    "artifacts/tools/fetch_v03_artifacts.py": "ef64cb4b73a2aa815c83362799928346f728e08d5fe00215ec80962875c07887",
+    "artifacts/tools/release_audit.py": "1f24adb4193ecf8b1508f8fe5250f9d73ee09324a48ae10b93ae46b18576d3c0",
+    "artifacts/tools/release_audit_legacy.py": "a952502d6177ad7412b2d51ca4e957b85d21ed9dfccde7ec8b43287b229c4e7c",
+    "artifacts/tools/verify_layout.py": "021026315406d00f9c48b64a4d2906dbba2e76888f05854ff1f6a407fcdb7ac7",
+    "artifacts/tools/verify_v03_snapshot.py": "c6a846066fd3e06186857085e4b0572398b7667ba81e487ceff335efe43c8698",
+    "artifacts/tools/verify_v03_supplement.py": "44b36af60ab958f06cfe682423d06a7064bec4f728b520dfc6ee7245374395d5",
+    "benchmarks/examples/client.py": "3a7c91d9671c9283a66c960071fb218dbee08bdb025c1d1940610a22d7761fa3",
+    "benchmarks/tests/test_corpus_index.py": "e1fa46a718b3fafa9d76d367e4d68eeec16dd1a698e39618736e86374f9be760",
+    "benchmarks/tests/test_eviweave.py": "5ad85d459771e4740b9e4344cd3d7dc27e2759806dcfb958a1733b7525628de5",
+    "benchmarks/tests/upstream/test_adaptive.py": "79fcd31ab327a80a1e145fded1c8f69845cb36ceb28ca1d76b34e778e14fd4d9",
+    "benchmarks/tests/upstream/test_answer_only.py": "f17cc69e098e7cb46e0fb2806f694f83173b2bcd904b73be9beeb21ee9424a8a",
+    "benchmarks/tests/upstream/test_coherent_sources.py": "92d715071082ca16e6340b2911666a008b9d4f44675a1370f8dee469157c1049",
+    "benchmarks/tests/upstream/test_contract.py": "b89cbbfc49f6fb0a7b2f2c0260e2dfa7d2335ffc3b813f31f7593260b52c96ae",
+    "benchmarks/tests/upstream/test_evidence_budget.py": "c41047949df0e9b65d38056de3607786ba7660a103c2b0ac3db5779645d6cd7d",
+    "benchmarks/tests/upstream/test_evidence_windows.py": "04fadc9a3c1b612aba1f180ad1ee2fdff3a7f260eaf4a2d6483807273e742e97",
+    "benchmarks/tests/upstream/test_focused_packing.py": "1c68b0a961201c5cd7125b7914afa5dcdc2d498dc501741f18fb532f128b5c72",
+    "benchmarks/tests/upstream/test_query_documents.py": "e0e0d1218cf7fc99c30ae682c08ce0794e945174e46e523478c2e52a6e2d3c28",
+    "benchmarks/tests/upstream/test_remote_encoder.py": "8b001763ae71afe331533c03e684ccf81087223e8fafc486c8ac6d7aaa4e51c4",
+    "benchmarks/tests/upstream/test_retrieval_views.py": "2f626a56be75b4293c0bf1e77ce0b6684ba159da58ebe69afea3651020e1e4a9",
+    "candidate-v03/ARTIFACT_ACCESS.md": "9e99c0d1b0c2d5b7b3afcfe9d1b57707e233fa6b983b63ca23ab7fde69db23f7",
+    "candidate-v03/CAPACITY.md": "d1dedd82407d5f9815f656a2f03d64e51b450737642481a9b723df2de3c93ebf",
+    "candidate-v03/DEPLOYED_MANIFEST.json": "c2ccd8d8bb9e3b37412cb68cd3107df1967708400180d14fe46eb93ec7b1794c",
+    "candidate-v03/EVALUATION.md": "84717065ed188b4662d96fc2625608d2f7e54d25fb645d78f4ac9a645854fe3e",
+    "candidate-v03/FULL_RESULT.json": "98ffd44e9f823c32320bc7adece31a9e6ef4f117c9da0552d520d30ef7afb546",
+    "candidate-v03/LINUX_RUNTIME.md": "3abc4d1334f77d2a6b26e6854059ad27023f5388f53d3113ba32b08b5f7e84a2",
+    "candidate-v03/MODEL_CARD.md": "0dd1557234cca896a3d7960c455de69108316d274fe193e6e098a6a5134f2065",
+    "candidate-v03/MODEL_IDENTITY.json": "cdc0940b5a0f1feaef309df865514f7012a7c7953809aee4996458b3fdbf3359",
+    "candidate-v03/README.md": "17c1a19496041f6ed772a2110c14e9086529c1a6b06f28ccb05e59ae50ceb134",
+    "candidate-v03/SOURCE_MAP.json": "47555a12b6cf22288d36c681a6a75c2f59fd527f6d4e9e37b35626a4c8f3f87d",
+    "candidate-v03/artifacts/ARTIFACTS.json": "98cfa1aae1378175a0da79c317b5db091d0d4e2ecbab9cce6a1ae4eda8b1d3e5",
+    "candidate-v03/artifacts/VALIDATION.json": "f17891fe22ab8f7421373648db87a4f138ba4439b36fd939ae051cf44c71716e",
+    "candidate-v03/artifacts/adapter-step80.safetensors": "d86e773035f920b9d5dc23ba91e4c802dfcbf6d897813029b012057d62316619",
+    "candidate-v03/artifacts/eviweave-v03-public-startup-20261104.zip": "f223d013bf2e713f490ddf28bc68976d60b2beab564ddb8472929246da8ee373",
+    "candidate-v03/licenses/CC-BY-4.0.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+    "candidate-v03/licenses/COLBERT-MIT.txt": "641c1a7fc3e22f3ea8521617c690213f0d741bf95ff35eeba99b34ff2102e0ae",
+    "candidate-v03/licenses/QWEN-APACHE-2.0.txt": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+    "candidate-v03/runtime-linux/BUILD_INPUTS.json": "edab2c02c029985b1fc9da8a516b5137e5175990267e847b3833e9f4f48c3028",
+    "candidate-v03/runtime-linux/SUPPLEMENT_MANIFEST.json": "9f810ade410bfb3515853780c440cdc2e6326023f72469c45ecaa1002d1f9839",
+    "candidate-v03/runtime-linux/VALIDATION.json": "9143e7d667e04d3f31d3734b6388b1c3d867ce87171dba9b70ef85550773e1b5",
+    "candidate-v03/runtime-linux/eviweave-m02-token.service": "7024f1511621e4f2e5038a9cadc05733ec5031dcd2e47fc31f0e16b65344af68",
+    "candidate-v03/runtime-linux/requirements.freeze.txt": "6dade856b275d1cdecac881eb1382d5ef74a20818ef794c6684f8a498f59aa67",
+    "candidate-v03/runtime-linux/source/linux_owner_resident.py": "5ca16a348e2a4d70d975ff7d57f77493f6af1fddae4c3db35b00a06c000caeef",
+    "candidate-v03/runtime-linux/source/process_check_resident.py": "e66d9ec06706517147b7ec1f8baab8b47e291636380971492ad477262c270d2f",
+    "candidate-v03/runtime-linux/source/remote_encoder.py": "5df870361bb3e804bc679e86ff13474e75f44c200a69b8b143d277d3770962e3",
+    "candidate-v03/runtime-linux/source/rpc_server_resident.py": "e6be1bbe105b6998e0b1e9e493e5c93ce5e5c024ad4475133b4c687f5f6016dd",
+    "candidate-v03/source/deployment-v36-cpu-reference/audit_source.py": "7456b509c0cad77336841901b7c815eb47d5aa3cccc3929a51f792193ea9b69e",
+    "candidate-v03/source/deployment-v36-cpu-reference/build_manifest.py": "be095bf42aa12a28f155a1ba124352be8d765162e7233b4791d50b653b362349",
+    "candidate-v03/source/deployment-v36-cpu-reference/deploy.py": "ab5ac91a947cbfad90d0471638dcf5eed2c4fd6abda6af0d6e7af02089cf3f9a",
+    "candidate-v03/source/deployment-v36-cpu-reference/direct_scorer.py": "e294aa760d39f95cb93d49f52120219f9ab6a7227a8987166ff6f965e948af17",
+    "candidate-v03/source/deployment-v36-cpu-reference/rpc_server.py": "2c457af83b6d03cbd6148c081e7a055e26fce857d9416d11c56949f979fb5d24",
+    "candidate-v03/source/deployment-v36-cpu-reference/runtime_store.py": "ddf093aa7f90c2a585455553c9da04511b95830a3b5c50514e093821acdd7f97",
+    "candidate-v03/source/deployment-v36-cpu-reference/server.py": "c505548adfc90de569e154e54eb42a5b6c2d8626073e61544a5b157ae43c1bad",
+    "candidate-v03/source/deployment-v36-cpu-reference/service_owner.py": "e71fc9ad5f8cea7fa63791b9e56ce78a92b7f2fa410eccccb562cd9d816328f7",
+    "candidate-v03/source/deployment-v36-cpu-reference/transform.py": "7b20d884e8dab69039dd8e675b39fc6fdf01460c4e62220ba960d9441cfd89aa",
+    "candidate-v03/source/deployment-v36-cpu-reference/validate_source.py": "085daa6edc1063f1dc1f14fa8788f61db771993b257e9fa5cd6de2cb21d85f06",
+    "candidate-v03/source/metric-space-v29/metric_model.py": "d277ca2d5d93f776789d7ebfd564d26b3fb1f95bd6d7912ce7ceb3438995e5e8",
+    "candidate-v03/source/metric-space-v33-timestamp-credit/temporal_headers.py": "b7b288ab588ee5400fcbcf262cc577ac6dc924483840c2b64ebad9073a1d85cf",
+    "candidate-v03/source/metric-space-v34-search-credit/search_credit.py": "ac678bc6ff6e55507ab51cb4477acbe9104bc7763f86c3dda01adfd0a6c1fe69",
+    "candidate-v03/training/ADMISSION_STATUS.json": "60292427ed54da3f241d025f5e3210ff914d098c05737ed54f3a2605a41dd3ea",
+    "candidate-v03/training/DATA_PROVENANCE.json": "9567e67f89d86cfe2fa1f7da645bca5f0102c97342afa5d87d0bc60f4137dc54",
+    "candidate-v03/training/ISOLATION_AUDIT.json": "a30ba5601039c98eaebb02e5b1f5372712d091cc00addef7637d7259187cfe52",
+    "candidate-v03/training/RECIPE.json": "8dcd11744b0620a75cd40ca03446e08e13f7a0b92b34389c2fc951575fa9365a",
+    "candidate-v03/training/SOURCES.json": "6cbd52f8139e3d0568fb8d3d111f1175e28f71470a3ac68951ba13257055944a",
+    "candidate-v03/training/TRAINING_RESULT.json": "4404177be449a8d0538a39f9b827b9ab1b1bf587af91a878370e12516d4a834c",
+    "dependencies/exact32/adaptive_evidence/__init__.py": "bffb96293a3ee82cfe3742c52d9a91e8ff65e60394b09128088d6d25cfb4ebbf",
+    "dependencies/exact32/adaptive_evidence/api.py": "852f309c88b6a5edab2a7199e3297302fc48b1c4de24e265ae601663eb320086",
+    "dependencies/exact32/adaptive_evidence/core.py": "8bf823550c55dbd9c0048f55dc6d43448387450591204d0513e3717a3462579f",
+    "dependencies/exact32/adaptive_evidence/encoder.py": "9d780f9179c00168a68d75b74855ff6b07eb655f2ed106fd2c97b5ab9c3b78ae",
+    "dependencies/exact32/adaptive_evidence/evidence_windows.py": "6995c2b015b75bcb626650e73612ce5e948cc8fdc04e58ca18d534ed0b978166",
+    "dependencies/exact32/adaptive_evidence/focused_packing.py": "4bac95a03cca7aa65807f24977b7441ddef48b83c4510da16cdfbd2d71d00116",
+    "dependencies/exact32/adaptive_evidence/passage_packing.py": "e0048dae8c6e6368ede7219602c24557ce524e1bd5ce6c2fc201d9ec1e49bd03",
+    "dependencies/exact32/adaptive_evidence/remote_encoder.py": "684c42a960cc15c68cea710337421c716145facc2dc09c9a3fd8b1a427b9b1e3",
+    "dependencies/exact32/adaptive_evidence/retrieval_views.py": "25876968cd5029ac9da816fc459ed5a427f8eed24cc4901540dadef03746bf91",
+    "dependencies/exact32/adaptive_evidence/source_links.py": "19798eb431e25c57f8f71a2524da70ac482a1e4353f1ba426bf7c0bec49b4bf0",
+    "dependencies/exact32/adaptive_evidence/source_prior.py": "01321f13642f129dd3ff4c5be27068cff07e6096b0a9b5edd3e324adad3d4e37",
+    "docs/source-manifest.json": "a80bdbf19b408206c8aa8237e5e74689a770b745f7d95c3940a0f9f6ea0afcb9",
+    "model_notes/DEVELOPMENT.md": "83c19d39ec5368315aa1c3ca726565d0bb19b4db58906019ddbfd653da2c8552",
+    "model_notes/RESEARCH_STATUS.md": "a5ce8a0f6f215465bfc5e31e63405d5d3ce893f5239204b9e3db8fd2dd7daa9b",
+    "model_notes/VALIDATION.md": "97b5790f8a7cb20fbafdd1ebf044b39765d454ebe78a9054948eaf79fc05726e",
+    "preflight.py": "d4d04182cc033f8843a088ebc6115c90786b2625befc97c23354dc9893061a17",
+    "pyproject.toml": "711a255d489c9554d8793fb69e06b4f428f770940bdf1739e280838140f08c10",
+    "retrieval/eviweave/__init__.py": "210e0c2e8333cfdd106bdfa89d926529a35017ae4e7e1b03ba87002df00727de",
+    "retrieval/eviweave/__main__.py": "eebfae806f375fa28362506a9fb3325fb792d39f6c3a6458fa5a104945f3e0e8",
+    "retrieval/eviweave/api.py": "c592403cb7de0781e3a1537fbc437178ff3d22c5cbd21fbe072f7c34c14a94ec",
+    "retrieval/eviweave/encoders.py": "36884911eef9ef4251f154e21b6a074657a95b32bfcedcccfa7e0fad39460f9b",
+    "retrieval/eviweave/experimental/__init__.py": "d05b507fc4325f63b0ee58c02258f6fa774c3ae620ee4dfd58d43b5805b83e6c",
+    "retrieval/eviweave/experimental/content_tokens.py": "8935faacf8bd71d73637f64a867f300b57a2b1313ff47b6029dfb4049db71468",
+    "retrieval/eviweave/experimental/corpus_index.py": "4c28780043a7f525a5eff9cdaac5912eec43c3a82b37cd105af387814236a7b2",
+    "retrieval/eviweave/experimental/guards.py": "78179f1714b5d12e517615a6824b1df2b76f502771fcd6158d32ad214c7409b2",
+    "retrieval/eviweave/experimental/lora_adapter.py": "231a08f851ab0006c6bc3c54c47d401273989f4346242ccc4fbffa1c8607b982",
+    "retrieval/eviweave/experimental/token_scorer.py": "315d7cd1217180889f63c87ea580c7fae562121d8a851671f6479616eae7ca34",
+    "retrieval/eviweave/locking.py": "ecbcb936784838b88569a46e284348198957e23ce8b8c46f813db3040b76f641",
+    "retrieval/eviweave/runtime.py": "78c84a05380609dfb072724e31d8a5ce6772489a9bc0d446e9d3c8790fa1b322",
+    "tools/fetch_v03_artifacts.py": "74a939356b163408e72b63e57101440a3fd5364844adac605906b08af5c7e531",
+    "tools/release_audit.py": "69b8662a9f291dc16f0b5449c1583105e93f73862047a962dde33219aea2034b",
+    "tools/verify_v03_snapshot.py": "e5b1ce79d797e5724ce570cae3edc076500db37fde587fc5bbad2a2d70b5c966",
+    "tools/verify_v03_supplement.py": "9a1130bd8f0e0eb4d21f7a4f0a53655bd397e1f513c478dc313324b87495c695",
+    "retrieval/CONTRIBUTING.md": "3aee6f79e2c0640e60e2e57959574401f14f0e61c7c940df607a5da9c30f2d25"
+  }
+}

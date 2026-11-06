@@ -1,5 +1,7 @@
 # EviWeave · 证据织忆
 
+检索包的开发环境与两组测试入口见[贡献指南](retrieval/CONTRIBUTING.md)；正式运行材料位于 `candidate-v03/`。
+
 **参评版本：v0.3 · Textual Memory · 自托管 Add/Search API**
 
 EviWeave 保存对话、文档、角色、时间和来源跨度，按问题返回可追溯的记忆证据。服务负责写入和检索，最终回答及评分由 AML 平台统一完成。
@@ -24,7 +26,7 @@ EviWeave 保存对话、文档、角色、时间和来源跨度，按问题返�
 4. **词元级选择。** ColBERTv2 加固定 LoRA，对原生前128项来源池中满足约束的完整来源做 MaxSim 匹配。利用可还原的时间头压缩节省预算，只有通过原文、顺序、字符预算及词元位置检查的方案才可加入额外来源；不满足条件时保持原结果。
 5. **返回证据。** Search 输出按优先顺序排列的 `data` 数组，不生成答案、选项字母或评分。词元服务故障时返回503，避免静默替换受测实现。
 
-正式 v0.3 使用上述固定来源池机制。仓库还保留了早期研究 CLI 和默认关闭的全库 ColBERT 实验，使用方法见 [研究包运行指南](RUNNING.md)。
+正式 v0.3 使用上述固定来源池机制。仓库还保留了早期研究 CLI 和默认关闭的全库 ColBERT 实验，使用方法见 [研究包运行指南](model_notes/DEVELOPMENT.md)。
 
 ## 正式源码与模型身份
 
@@ -41,17 +43,17 @@ EviWeave 保存对话、文档、角色、时间和来源跨度，按问题返�
 
 ColBERT 在 Linux CPU 上常驻运行，保持 FP32 编码和 MaxSim、FP64 求和、unmerged LoRA、query32/window177/stride145、2线程。Qwen 分词器仅用于预算与位置检查，记忆服务不加载其生成模型。基础语义 embedding 使用外部 DashScope 接口；ColBERT 和预算分词器从本地工件加载。查询修复仅在供应商明确拒绝查询长度时启用，文档侧不启用该恢复。
 
-模型与外部工件要求见 [正式运行指南](candidate-v03/LINUX_RUNTIME.md) 和 [模型身份](candidate-v03/MODEL_IDENTITY.json)。
+正式适配器已提供[实文件下载及完整工件获取说明](candidate-v03/ARTIFACT_ACCESS.md)，配套[模型卡](candidate-v03/MODEL_CARD.md)披露训练来源、许可和防污染边界。训练使用固定PersonaMem-v2公开train/val来源，经排除后为477条训练查询、64条验证查询。精确适配器及其训练来源的单独AML准入确认仍待补充；Full完成和Linux迁移批复不代替该确认。模型与外部工件要求见[正式运行指南](candidate-v03/LINUX_RUNTIME.md)和[模型身份](candidate-v03/MODEL_IDENTITY.json)。
 
 ## 赛事 API
 
-参评时登记的路由如下。服务器目前由运营方关闭；下表是登记信息，不表示当前在线。
+应用的接口路径与鉴权方式如下，访问基址由独立运行环境配置。
 
 | 操作 | 地址 | 鉴权 |
 |---|---|---|
-| Add | `https://101.201.226.162/m02/add` | 已登记的 Bearer Token |
-| Search | `https://101.201.226.162/m02/search` | 已登记的 Bearer Token |
-| Health | `https://101.201.226.162/m02/health` | 无需鉴权 |
+| Add | `/add` | 已登记的 Bearer Token |
+| Search | `/search` | 已登记的 Bearer Token |
+| Health | `/health` | 无需鉴权 |
 
 实际密钥仅通过赛事私有流程配置，不进入仓库。正式版本接收 Textual 字符串内容；多模态内容数组不在本版本支持范围内。
 
@@ -82,25 +84,17 @@ Search 请求：
 
 ## Linux 常驻运行与复现
 
-已部署环境由 `memory-lab@m02.service`（API，18102）和 `eviweave-m02-token.service`（词元 RPC，回环18403）组成，完成过开机启用及异常退出恢复配置。运行不再依赖个人 Windows 电脑或 SSH 反向隧道。
+使用独立环境准备运行工件、私密配置及数据库。
 
-服务器开启后的只读检查：
-
-```shell
-systemctl status memory-lab@m02.service eviweave-m02-token.service
-systemctl is-enabled eviweave-m02-token.service
-journalctl -u eviweave-m02-token.service -n 50 --no-pager
-```
-
-完整重建需另行准备匹配的模型权重、适配器、分词器、资格元数据和私有配置；目录布局与边界见 [Linux 运行指南](candidate-v03/LINUX_RUNTIME.md)。评测或复核期间保留数据库、命名空间及幂等记录，维护按 AML 确认的兼容断点处理。
+[工件准备工具](artifacts/tools/fetch_v03_artifacts.py)可恢复并核验80个正式启动文件。67个公开启动文件和适配器随仓库提供，基础权重有固定上游下载；另11个含原文本或排除指纹的文件已打成本地受控包，需由负责人向审核方交付，不能仅靠公开仓库冷启动。私有配置和运行环境另行准备，见[工件获取说明](candidate-v03/ARTIFACT_ACCESS.md)与[Linux运行指南](candidate-v03/LINUX_RUNTIME.md)。评测或复核期间保留数据库、命名空间及幂等记录，维护按 AML 确认的兼容断点处理。
 
 固定五组合成输入的 Windows/Linux CPU 对照通过：最大分数差 `6.0051679611206055e-06 < 1e-5`，来源选择、顺序和最终 Search 证据一致。该结论限于所测输入；延迟、容量和成本边界见 [容量记录](candidate-v03/CAPACITY.md)。
 
 本地核验发布材料，无需模型、GPU或赛事账号：
 
 ```shell
-python tools/verify_v03_snapshot.py
-python tools/verify_v03_supplement.py
+python artifacts/tools/verify_v03_snapshot.py
+python artifacts/tools/verify_v03_supplement.py
 ```
 
 ## 本地研究演示
@@ -115,13 +109,13 @@ python -m pip install -e ".[api,test]"
 python -m eviweave demo
 ```
 
-`demo` 使用合成数据和 HashEncoder，无需模型或账号。演示接口与部署范围见 [RUNNING.md](RUNNING.md)。
+`demo` 使用合成数据和 HashEncoder，无需模型或账号。演示接口与部署范围见 [RUNNING.md](model_notes/DEVELOPMENT.md)。
 
 ## 材料索引
 
 - [提交补充说明](SUBMISSION.md)：参评版本、固定提交及核验范围。
 - [正式候选源码](candidate-v03/README.md)、[Linux 运行与接口](candidate-v03/LINUX_RUNTIME.md)、[官方 Full 结果](candidate-v03/EVALUATION.md)。
-- [模型与工件身份](PROVENANCE.md)、[历史研究状态](docs/RESEARCH_STATUS.md)、[验证记录](docs/VALIDATION.md)。
+- [模型与工件身份](PROVENANCE.md)、[历史研究状态](model_notes/RESEARCH_STATUS.md)、[验证记录](model_notes/VALIDATION.md)。
 - 赛事依据：[API Guide](https://agentmemoryleaderboard.ai/api-guide)、[Documentation](https://agentmemoryleaderboard.ai/docs)、[赛事说明](https://agentmemoryleaderboard.ai/competition/)。
 
-源码按 [MIT License](LICENSE) 分发，保留版权与 [第三方许可](THIRD_PARTY_NOTICES.md)。模型权重、用户数据库、评测数据、答案、提示、日志和凭据不随仓库发布。
+源码与本次发布的正式适配器按[MIT License](LICENSE)分发；基础模型、预算分词器与训练数据分别保留其[第三方许可](THIRD_PARTY_NOTICES.md)。基础模型权重、用户数据库、原始训练/评测文本、答案、提示、日志和凭据不公开。
